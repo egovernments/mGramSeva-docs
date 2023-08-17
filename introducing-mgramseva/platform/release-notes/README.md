@@ -50,7 +50,7 @@ Primary KPI for overall mGramSeva - [mGramseva Adoption KPI](https://docs.google
 % of the advance amount of revenue collected month on month\
 \
 **Outcomes:**\
-****\* Increased revenue\
+\* Increased revenue\
 \* Timely payments
 
 ## Known Issues

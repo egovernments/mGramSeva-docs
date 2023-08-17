@@ -63,7 +63,29 @@ Before you proceed with the documentation, make sure the following pre-requisite
 
 #### **ws-calculator penalty configuration:**
 
-We have 4 types of penalties:
+**Use case 1 : Fixed percentage on outstanding without penalty**\
+**Use case 2 : Fixed percentage on current month**\
+**Use case 3 : Fixed percentage on outstanding including penalty**
+
+**Note : All above are applied to the running month only.**
+
+Use case 4 : Fixed percentage on outstanding applied for every month on the outstanding amount respectively (not implemented)
+
+**Tech configs:**
+
+**Use case 1:**\
+"type": "Fixed",\
+&#x20;"subType": "outstandingWithoutPenalty"
+
+**Use case 2:**\
+"type": "Fixed",\
+&#x20;"subType": "currentMonth",
+
+**Use Case 3:**\
+"type": "Fixed",\
+&#x20;"subType": "outstanding",\
+\
+We have Total 4 types of penalty in the system:
 
 **Fixed - Current month:** This type of penalty is applied to the current month's amount based on the rate (%) given in the configuration.\
 
@@ -88,7 +110,7 @@ We have 4 types of penalties:
 }
 ```
 
-**Fixed - outstanding:** This is the penalty applied to the total pending amount till the current month's amount based on the rate (%) given in the configuration.
+**Fixed - outstanding:** This is the penalty applied on the total outstanding amount including previously applied penalties based on the rate (%) given in the configuration.
 
 ```
 {
@@ -108,6 +130,27 @@ We have 4 types of penalties:
     }
   ]
 }
+```
+
+**Fixed - outstandingWithoutPenalty:** This is the penalty applied on the total outstanding amount excluding previously applied penalties based on the rate (%) given in the configuration.
+
+```
+{
+  "tenantId": "pb",
+  "moduleName": "ws-services-calculation",
+  "Penalty": [
+    {
+      "type": "FIXED",
+      "subType": "outstandingWithoutPenalty",
+      "rate": 10,
+      "amount":null,
+      "minAmount": null,
+      "applicableAfterDays": 10,
+      "flatAmount": null,
+      "fromFY": "2022-23",
+      "startingDay": "1/01/2022"
+    }
+  ]
 ```
 
 **Flat - Current month:** This type of penalty is applied to the current month's amount based on the amount given in the configuration.
