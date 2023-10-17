@@ -1,8 +1,12 @@
+---
+description: Update the app in case of new release/enhancements
+---
+
 # App Force Update
 
 ## Overview <a href="#overview" id="overview"></a>
 
-Show Update App PopUp to end users in case there is a new release in the Google play store or IOS App Store.
+Show Update App popup to end users in case there is a new release in the Google Play Store or IOS App Store.
 
 ## MDMS Configuration <a href="#mdms-configuration" id="mdms-configuration"></a>
 
@@ -10,12 +14,13 @@ Add the file (link below) in the common-masters MDMS -
 
 [<img src="https://github.com/fluidicon.png" alt="" data-size="line">mdms-mgramseva/AppVersion.json at UAT · misdwss/mdms-mgramseva](https://github.com/misdwss/mdms-mgramseva/blob/UAT/data/pb/common-masters/AppVersion.json)
 
-Whenever a new release is deployed to the play store or app store, update the version in the above-mentioned file.
+Update the version in the above-mentioned file whenever a new release is deployed to the Play Store or App Store.
 
 {% hint style="info" %}
 **Note: The version deployed in the Play Store and App Store should match the version in** [<img src="https://github.com/fluidicon.png" alt="" data-size="line">mdms-mgramseva/AppVersion.json at UAT · misdwss/mdms-mgramseva](https://github.com/misdwss/mdms-mgramseva/blob/UAT/data/pb/common-masters/AppVersion.json)
 {% endhint %}
 
+{% code lineNumbers="true" %}
 ```
 {  "tenantId": "pb", 
  "moduleName": "common-masters",  
@@ -33,22 +38,25 @@ Whenever a new release is deployed to the play store or app store, update the ve
 } ]  
 }
 ```
+{% endcode %}
 
-**Logic implemented for version check:**&#x20;
+### **Version Check Logic**&#x20;
 
 ```
 commonProvider.getAppVersionDetails();
 ```
 
-MDMS call is made every time a user opens the app.
+The MDMS call is made every time a user opens the app.
 
-In the landing page widget, afterViewBuild() returns a pop-up, validating if the package version matches the version in MDMS.
+Once the ViewBuild() displays a pop-up on the landing page widget, it validates if the package version matches the version in MDMS.
 
+{% code lineNumbers="true" %}
 ```
 await commonProvider.getAppVersionDetails();
 CommonMethods()
     .checkVersion(context, commonProvider.appVersion!.latestAppVersion);
 ```
+{% endcode %}
 
 ```
 CommonMethods()
