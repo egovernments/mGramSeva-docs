@@ -37,6 +37,7 @@
         * [mGramSeva Scheduler](introducing-mgramseva/platform/technical-user-docs/backend-services/mgramseva-scheduler.md)
         * [mGramSeva- Services Re-Indexing](introducing-mgramseva/platform/technical-user-docs/backend-services/mgramseva-services-re-indexing.md)
         * [mGramSeva Dashboard](introducing-mgramseva/platform/technical-user-docs/backend-services/mgramseva-dashboard.md)
+        * [Events Push To IFIX Adapter](introducing-mgramseva/platform/technical-user-docs/backend-services/events-push-to-ifix-adapter.md)
       * [Tech User Manual](introducing-mgramseva/platform/technical-user-docs/tech-user-manual/README.md)
         * [Language Selection](introducing-mgramseva/platform/technical-user-docs/tech-user-manual/language-selection.md)
         * [Login](introducing-mgramseva/platform/technical-user-docs/tech-user-manual/login.md)
