@@ -99,6 +99,7 @@
       * [Tabular Dashboard - Collection](introducing-mgramseva/product-docs/functional-docs/tabular-dashboard-collection.md)
       * [Download Bills & Receipt](introducing-mgramseva/product-docs/functional-docs/download-bills-and-receipt.md)
       * [App Force Update](introducing-mgramseva/product-docs/functional-docs/app-force-update.md)
+      * [HRMS](introducing-mgramseva/product-docs/functional-docs/hrms.md)
     * [User Docs](introducing-mgramseva/product-docs/user-docs/README.md)
       * [User Manual](introducing-mgramseva/product-docs/user-docs/user-manual.md)
 
