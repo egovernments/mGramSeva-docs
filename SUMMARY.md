@@ -100,6 +100,7 @@
       * [Download Bills & Receipt](introducing-mgramseva/product-docs/functional-docs/download-bills-and-receipt.md)
       * [App Force Update](introducing-mgramseva/product-docs/functional-docs/app-force-update.md)
       * [HRMS](introducing-mgramseva/product-docs/functional-docs/hrms.md)
+      * [Advance Changes](introducing-mgramseva/product-docs/functional-docs/advance-changes.md)
     * [User Docs](introducing-mgramseva/product-docs/user-docs/README.md)
       * [User Manual](introducing-mgramseva/product-docs/user-docs/user-manual.md)
 
