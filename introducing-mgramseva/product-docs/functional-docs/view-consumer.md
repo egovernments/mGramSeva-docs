@@ -26,7 +26,7 @@ Static HH card displays the following details
 1. If the bill is not generated (Post rollout until the first month)
    * Only the data Card is shown - No action is required  &#x20;
 2. Once the first demand is generated - A new consumer bill/card gets generated and displays the following data points and actions -
-   * &#x20;**** Billing cycle – the latest billing cycle
+   * &#x20;Billing cycle – the latest billing cycle
      * Amount -&#x20;
        * Current Amount - fixed charges applicable to the billing cycle
        * Arrears - Arrears from the first month (From next month onwards this field displays any unpaid dues)
@@ -55,15 +55,15 @@ Static HH card displays the following details
 
 
 
-![](<../../../.gitbook/assets/image (59).png>)
+![](<../../../.gitbook/assets/image (19).png>)
 
 New Connection Before First Bill Generation
 
-![](<../../../.gitbook/assets/image (74).png>)
+![](<../../../.gitbook/assets/image (137).png>)
 
 First bill is generated - Payment Collection is pending
 
-![](<../../../.gitbook/assets/image (143).png>)
+![](<../../../.gitbook/assets/image (145).png>)
 
 2 payments made
 
@@ -111,9 +111,9 @@ First bill is generated - Payment Collection is pending
        * Message to go in WhatsApp “ Please find receipt for water charges with Connection ID WS-83121-8312 paid on dd/mm/yyyy” along with receipt PDF
 4. If a new bill is generated again by clicking on ‘Generate a new bill’ - the revenue collector goes through the bill generation flow and a single new card appears between ‘Generate bill’ and ‘Consumer receipts block’
 
-<img src="../../../.gitbook/assets/image (29).png" alt="" data-size="original">![](<../../../.gitbook/assets/image (147).png>)
+<img src="../../../.gitbook/assets/image (2).png" alt="" data-size="original">![](<../../../.gitbook/assets/image (111).png>)
 
-![](<../../../.gitbook/assets/image (149).png>)
+![](<../../../.gitbook/assets/image (119).png>)
 
 
 

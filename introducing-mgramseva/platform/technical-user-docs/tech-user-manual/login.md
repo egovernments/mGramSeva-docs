@@ -6,7 +6,11 @@ Users are redirected to this screen once they select the preferred language in t
 
 Link → {base url}/mgramseva/selectLanguage/login
 
-![](https://238770250-files.gitbook.io/\~/files/v0/b/gitbook-legacy-files/o/assets%2F-Mfb8ehcimjt6ER7QOME%2F-MkMeYDtmbSGq9gFtUsn%2F-MkMeryxdSejVdCjRrGR%2Fimage.png?alt=media\&token=4b8bfe7a-be6b-4ced-bb1c-c5691816a7a4)
+<div align="left">
+
+<img src="https://238770250-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-Mfb8ehcimjt6ER7QOME%2F-MkMeYDtmbSGq9gFtUsn%2F-MkMeryxdSejVdCjRrGR%2Fimage.png?alt=media&#x26;token=4b8bfe7a-be6b-4ced-bb1c-c5691816a7a4" alt="">
+
+</div>
 
 ### User Interaction On Screen <a href="#user-interaction-on-screen" id="user-interaction-on-screen"></a>
 
@@ -52,4 +56,3 @@ Widgets utilized from library
 | `BuildTextField` | [https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/TextFieldBuilder.dart](https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/TextFieldBuilder.dart) | Text Field  |
 | `Button`         | [https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/Button.dart](https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/Button.dart)                     | Button      |
 
-****

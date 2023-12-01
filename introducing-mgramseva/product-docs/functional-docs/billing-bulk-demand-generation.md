@@ -34,6 +34,6 @@ In the Bulk Demand screen -
 
 Clicking on Generate Demand triggers the demand for the given billing cycle based on the logic defined above.
 
-![](<../../../.gitbook/assets/image (105).png>)
+![](<../../../.gitbook/assets/image (125).png>)
 
 > [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

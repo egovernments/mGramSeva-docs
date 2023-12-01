@@ -28,15 +28,15 @@ Install [Android Studio](https://developer.android.com/studio?gclid=Cj0KCQiAoNWO
 
 Open Android Studio. Open plugin preferences (**File > Settings > Plugins**) and select **Marketplace.** Select the Flutter plugin and click **Install** as shown in the image below. Click **Yes** when prompted to install the Dart plugin.
 
-![](<../../../.gitbook/assets/image (9).png>)
+![](<../../../.gitbook/assets/image (7).png>)
 
 Set the Flutter SDK path in android studio by navigating to (**File > Settings > Plugins > Language & Frameworks >>flutter**) flutter as shown in the image below.
 
-![](<../../../.gitbook/assets/image (57).png>)
+![](<../../../.gitbook/assets/image (63).png>)
 
 Add the flutter path to the system path variable for running the flutter commands as shown in the image below.
 
-![](<../../../.gitbook/assets/image (111).png>)
+![](<../../../.gitbook/assets/image (132).png>)
 
 Open a new terminal and run the **flutter doctor** command. This downloads the respective Dart SDK version and runs **flutter doctor--android-licenses** to accept the android licenses.
 
@@ -44,19 +44,19 @@ The steps below guide us to run the project on both Web and Mobile\
 1\. Clone the project from the [Git repo](https://github.com/misdwss/punjab-mgramseva).\
 2\. Open the project in android studio by selecting (**File > open**), select the flutter project (punjab-mgramseva/frontend/mgramseva) from the cloned path as shown in the image below.
 
-![](<../../../.gitbook/assets/image (3).png>)
+![](<../../../.gitbook/assets/image (11).png>)
 
 ## **Running On Android Emulator**
 
 Select the AVD manager from the right-side top corner as shown in the image. Now, select any device by tapping on the play button. The Android Studio launches the emulator and the device is auto-selected. There are two modes for running the application - play and debug. Tap on any one of the modes to launch the mGramSeva application in the emulator as shown in the image.
 
-![](<../../../.gitbook/assets/image (67).png>)
+![](<../../../.gitbook/assets/image (121).png>)
 
 ## **Running On Web**
 
 Select the chrome option from the device selection and tap on the play button. This launches the application on a chrome window.
 
-<mark style="background-color:blue;">Note: To resolve the cors error follow the steps provided</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">****</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">in this</mark> [<mark style="background-color:blue;">link.</mark>](https://stackoverflow.com/questions/65630743/how-to-solve-flutter-web-api-cors-error-only-with-dart-code)\
+<mark style="background-color:blue;">Note: To resolve the cors error follow the steps provided</mark> <mark style="background-color:blue;">in this</mark> [<mark style="background-color:blue;">link.</mark>](https://stackoverflow.com/questions/65630743/how-to-solve-flutter-web-api-cors-error-only-with-dart-code)\
 
 
 ## **Build Prod App Bundle - Steps**
@@ -78,11 +78,11 @@ Select the chrome option from the device selection and tap on the play button. T
 8. Download the key-store from the below link \
    [<img src="https://developers.google.com/drive/images/drive_icon.png" alt="" data-size="line">https://drive.google.com/file/d/14teTA0nqHaFLEkgg\_LCHTcji5cRJDnXR/view?usp=sharing - Restricted link, try another account](https://drive.google.com/file/d/14teTA0nqHaFLEkgg\_LCHTcji5cRJDnXR/view?usp=sharing)\
    Add this properties file to the android app folder as shown in the image below -\
-   **android → key.properties** ![](../../../.gitbook/assets/image.png)****
+   **android → key.properties** ![](<../../../.gitbook/assets/image (54).png>)
 9. Download the google service json from the link below\
    [<img src="https://developers.google.com/drive/images/drive_icon.png" alt="" data-size="line">google-services.json](https://drive.google.com/file/d/1USBY0a2sluHh2VwWxVcKhR7nzjkYnAmW/view?usp=sharing)\
    Add this json file to the android app folder as shown in the image below\
-   **android → app → google-services.json** ![](<../../../.gitbook/assets/image (122).png>)****
+   **android → app → google-services.json** ![](<../../../.gitbook/assets/image (127).png>)
 10. Build the prod app bundle → **flutter build appbundle**\
     Check the attached drive link below which includes the key-store, and version tracker. Update the version and release date in the sheet.\
     Path → **D:\mgramseva\_prod\punjab-mgramseva\frontend\mgramseva\build\app\outputs\bundle\release\app-release.aab**\

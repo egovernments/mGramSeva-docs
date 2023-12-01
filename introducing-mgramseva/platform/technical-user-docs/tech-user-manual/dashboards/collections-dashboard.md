@@ -6,7 +6,7 @@ Users are redirected to this screen if they select the GPWSC Dashboard option on
 
 **Link** → {base url}/mgramseva/home/dashboard?tab=0
 
-![](<../../../../../.gitbook/assets/image (144).png>)
+![](<../../../../../.gitbook/assets/image (91).png>)
 
 ## **User Interaction On Screen**
 
@@ -44,7 +44,7 @@ Widgets utilised from Library
 
 | Widgets          | File Path                                                                                                                                                                                                                                              | Description |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
-| `Pagination`     | ****[**https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/pagination.dart**](https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/pagination.dart)****               | Pagination  |
+| `Pagination`     | [**https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/pagination.dart**](https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/pagination.dart)                       | Pagination  |
 | `BuildTextField` | [https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/TextFieldBuilder.dart](https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/TextFieldBuilder.dart)               | Text Field  |
 | `BillsTable`     | [https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/components/Dashboard/BillsTable.dart](https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/components/Dashboard/BillsTable.dart) | Table       |
 | `LabelText`      | [https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/LabelText.dart](https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/LabelText.dart)                             | Subtitle    |
@@ -64,4 +64,3 @@ View →[ <img src="https://github.com/fluidicon.png" alt="" data-size="line">pu
 
 Model →[ <img src="https://github.com/fluidicon.png" alt="" data-size="line">punjab-mgramseva/water\_connections.dart at develop · egovernments/punjab-mgramseva](https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/model/connection/water\_connections.dart)
 
-****

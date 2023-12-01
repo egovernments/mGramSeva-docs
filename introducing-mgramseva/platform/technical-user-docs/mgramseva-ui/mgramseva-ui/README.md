@@ -2,7 +2,11 @@
 
 **mGramSeva** is a Hybrid Application(web + App(Android + IOS)) built utilising Open Source Framework Flutter.
 
-![mGramseva Frontend Design](https://238770250-files.gitbook.io/\~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS0VW1NVyguqXxlketbHB%2Fuploads%2Fu5YISGc3AcAkDcTosRxC%2Fmgraseva-UI-architecture%20diagram.png?alt=media\&token=5464b732-ce60-4995-8101-d49833eff504)
+<div align="left">
+
+<img src="https://238770250-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS0VW1NVyguqXxlketbHB%2Fuploads%2Fu5YISGc3AcAkDcTosRxC%2Fmgraseva-UI-architecture%20diagram.png?alt=media&#x26;token=5464b732-ce60-4995-8101-d49833eff504" alt="mGramseva Frontend Design">
+
+</div>
 
 * CrossPlatform Application
 * Faster

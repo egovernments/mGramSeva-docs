@@ -10,9 +10,9 @@ Portable Bluetooth thermal printers are used to generate the mini receipts.
 
 `js`
 
-``![](<../../../../.gitbook/assets/image (32).png>)``
+![](<../../../../.gitbook/assets/image (14).png>)
 
-``
+
 
 ## Printing Receipts via Bluetooth Thermal Printer  <a href="#printing-receipts-via-bluetooth-thermal-printer" id="printing-receipts-via-bluetooth-thermal-printer"></a>
 

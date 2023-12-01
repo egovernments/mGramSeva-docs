@@ -35,7 +35,7 @@ Before you proceed with the documentation, make sure the following pre-requisite
 
 ## Interaction Diagram
 
-![](<../../../../.gitbook/assets/image (116).png>)
+![](<../../../../.gitbook/assets/image (97).png>)
 
 ### Configuration Details <a href="#configuration-details" id="configuration-details"></a>
 

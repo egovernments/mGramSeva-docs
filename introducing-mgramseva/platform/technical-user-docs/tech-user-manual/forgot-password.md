@@ -4,7 +4,7 @@
 
 Users are redirected to this screen once they click on the Forgot Password link on the home screen.
 
-![](<../../../../.gitbook/assets/image (62).png>)
+![](<../../../../.gitbook/assets/image (15).png>)
 
 ## **OTP Request**
 
@@ -52,7 +52,7 @@ Users are redirected to this screen once they click on the Continue button on Fo
 
 **Link -** → {base url}/mgramseva/selectLanguage/login/forgotPassword/resetPassword &#x20;
 
-![](<../../../../.gitbook/assets/image (44).png>)
+![](<../../../../.gitbook/assets/image (56).png>)
 
 ### **User Interaction On Screen**
 

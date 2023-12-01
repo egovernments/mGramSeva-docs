@@ -16,7 +16,7 @@ A revenue collector can see a CTA to “Generate a new Bill” on the HH details
 
     Text “ Dear \<ConsumerName>, Please find water bill for billing cycle \<Cycle> attached as PDF”
 
-| **Input Metric**       | ****                                                                                              | **Comments**                                                                                                           |
+| **Input Metric**       |                                                                                                   | **Comments**                                                                                                           |
 | ---------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | Previous Meter reading | Only for first-time bill generation                                                               |                                                                                                                        |
 | New meter reading      | For the first time and all consecutive bill generations                                           | Previous meter reading units and previous meter reading dates will be taken from the last bill for new bill generation |
@@ -24,7 +24,7 @@ A revenue collector can see a CTA to “Generate a new Bill” on the HH details
 
 For Demand Generation Logic refer to [Demand/Bill Generation for metered connection](broken-reference)
 
-![](<../../../.gitbook/assets/image (6).png>)![](<../../../.gitbook/assets/image (135).png>)
+![](<../../../.gitbook/assets/image (57).png>)![](<../../../.gitbook/assets/image (88).png>)
 
 1. All 5 digits in the meter reading must be entered. Show error message “ Old Meter Reading entered is Invalid” or “ New Meter Reading entered is invalid” respectively.
 2. The New Meter reading should be greater than the Old Meter Reading.

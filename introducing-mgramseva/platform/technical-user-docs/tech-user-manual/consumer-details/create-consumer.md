@@ -8,7 +8,7 @@ Enables employees to create new Consumers or Connections - The process of onboar
 
 → {base url}/mgramseva/home/consumercreate
 
-![](<../../../../../.gitbook/assets/image (31).png>)
+![](<../../../../../.gitbook/assets/image (50).png>)
 
 The Create Consumer card is available on the home screen as per the defined user role.
 
@@ -67,21 +67,21 @@ Water connection creation is of two types:
 
 A metered connection that requires Meter ID and meter installation Date/ Last Meter Reading Date and an optional field to capture meter reading**.**
 
-****![](<../../../../../.gitbook/assets/image (65).png>)****
+![](<../../../../../.gitbook/assets/image (72).png>)
 
 Non-Metered Connection which requires the last billing cycle as mandatory params captured in the field as shown below.
 
-![](<../../../../../.gitbook/assets/image (22).png>)
+![](<../../../../../.gitbook/assets/image (53).png>)
 
 Users can switch between connection types by selecting a desired value from the **Service Type** DropDown.
 
-![](<../../../../../.gitbook/assets/image (24).png>)
+![](<../../../../../.gitbook/assets/image (17).png>)
 
 
 
 **Advance and Penalty**
 
-![](<../../../../../.gitbook/assets/image (17).png>)
+![](<../../../../../.gitbook/assets/image (30).png>)
 
 * For consumers, users can give either Advance or Arrears along with a Penalty by selecting the respective option using the radio buttons. If a user selects Advance, the field is shown or else Arrears and Penalty will be shown where the user can enter the required amount.
 * The radio button “Advance” will be displayed only if the config flag “Advance enabled” is activated in the MDMS billing service.
@@ -130,4 +130,3 @@ Components utilised from **Widgets Library**
 | SearchSelectField Builder | [https://github.com/misdwss/punjab-mgramseva/blob/master/frontend/mgramseva/lib/widgets/SearchSelectFieldBuilder.dart](https://github.com/misdwss/punjab-mgramseva/blob/master/frontend/mgramseva/lib/widgets/SearchSelectFieldBuilder.dart) |
 | DatePicker Builder        | [https://github.com/misdwss/punjab-mgramseva/blob/master/frontend/mgramseva/lib/widgets/DatePickerFieldBuilder.dart](https://github.com/misdwss/punjab-mgramseva/blob/master/frontend/mgramseva/lib/widgets/DatePickerFieldBuilder.dart)     |
 
-****

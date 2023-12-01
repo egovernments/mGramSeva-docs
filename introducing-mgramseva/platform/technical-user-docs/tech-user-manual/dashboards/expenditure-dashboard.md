@@ -6,7 +6,7 @@ Users are redirected to this screen when they select the GPWSC Dashboard option 
 
 **Link** → {base url}/mgramseva/home/dashboard?tab=1
 
-![](<../../../../../.gitbook/assets/image (1).png>)
+![](<../../../../../.gitbook/assets/image (13).png>)
 
 ## **User Interaction On Screen**
 
@@ -43,7 +43,7 @@ Widgets utilised from Library
 | `Pagination`     | [https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/pagination.dart](https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/pagination.dart)                           | Pagination  |
 | `BuildTextField` | [https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/TextFieldBuilder.dart](https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/TextFieldBuilder.dart)               | Text Field  |
 | `BillsTable`     | [https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/components/Dashboard/BillsTable.dart](https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/components/Dashboard/BillsTable.dart) | Table       |
-| `LabelText`      | ****[https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/LabelText.dart](https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/LabelText.dart)                         | Subtitle    |
+| `LabelText`      | [https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/LabelText.dart](https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/LabelText.dart)                             | Subtitle    |
 
 ## **Role Access Mapping**
 

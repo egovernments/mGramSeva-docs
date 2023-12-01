@@ -384,7 +384,7 @@ Billing service can be integrated with any organization or system that wants a d
 
 **Interaction Diagram V1.1**
 
-![](<../../../../.gitbook/assets/image (71).png>)
+![](<../../../../.gitbook/assets/image (74).png>)
 
 
 

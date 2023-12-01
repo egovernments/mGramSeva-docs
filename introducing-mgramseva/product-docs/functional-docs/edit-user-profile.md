@@ -2,7 +2,7 @@
 
 mGramSeva users can edit their basic information like name, add gender, email and change password using the hamburger menu on any screen.
 
-![](<../../../.gitbook/assets/image (118).png>)
+![](<../../../.gitbook/assets/image (148).png>)
 
 
 
@@ -23,7 +23,7 @@ mGramSeva users can edit their basic information like name, add gender, email an
      * Changing the password shows a nudge to the user “Password updated successfully” and closing this nudge takes the user to the user profile screen.
    * Clicking on save shows a nudge to the user” Details saved successfully”. Upon closing, this user remains on the screen but the fields show as edited.
 
-![](<../../../.gitbook/assets/image (54).png>)
+![](<../../../.gitbook/assets/image (4).png>)
 
 
 

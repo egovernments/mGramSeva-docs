@@ -39,7 +39,7 @@ You can observe -&#x20;
 1. command->args value is failedbulkdemand ( through which python script understand to invoke only api configured in mdms-read-cronjob mdms json file with the name as “failedbulkdemand”
 2. cron->schedule  value is “ 30 3 5 \* \*” which define the time to kick this scheduler i.e at 3.30 on 5th day of every month. As the crontab follows GMT timezone converting this time to IST this jobs run on 9am of on 5th day of every month
 
-![](<../../../../.gitbook/assets/image (30).png>)[crontab.guru - The cron schedule expression editor](https://crontab.guru/) helps to define the pattern for the schedule cron.
+![](<../../../../.gitbook/assets/image (41).png>)[crontab.guru - The cron schedule expression editor](https://crontab.guru/) helps to define the pattern for the schedule cron.
 
 ## **Configuration**
 
@@ -70,7 +70,7 @@ valueFrom:
 
 fieldRef:
 
-&#x20;   ****    fieldPath: [metadata.name  ](http://www1.metadata.name/?tm=1\&subid4=1659347366.0203910000\&kw=Chinese+VPN\&KW1=India%20Enterprise%20Cloud%20VPN\&KW2=USA%20Enterprise%20VPN\&KW3=China%20Enterprise%20Cloud%20VPN\&searchbox=0\&domainname=0\&backfill=0)
+&#x20;   fieldPath: [metadata.name  ](http://www1.metadata.name/?tm=1\&subid4=1659347366.0203910000\&kw=Chinese+VPN\&KW1=India%20Enterprise%20Cloud%20VPN\&KW2=USA%20Enterprise%20VPN\&KW3=China%20Enterprise%20Cloud%20VPN\&searchbox=0\&domainname=0\&backfill=0)
 
 resources: |
 

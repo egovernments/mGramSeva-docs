@@ -4,7 +4,7 @@
 
 The household masters have to be created in the system to initiate the demand generation and collection process. These are consumers also referred to as the household that avails the water connection and supply on regular basis.
 
-![](<../../../.gitbook/assets/image (73).png>)
+![](<../../../.gitbook/assets/image (65).png>)
 
 Select the Create Consumer option from the list of tile/cards on the home page. This redirects the user to the Create Consumer page.&#x20;
 

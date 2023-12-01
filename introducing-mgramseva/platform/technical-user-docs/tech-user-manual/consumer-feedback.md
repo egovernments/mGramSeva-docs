@@ -6,7 +6,7 @@ Users can provide their feedback by giving a rating. It's an Open URL. It doesnâ
 
 **Link** â†’ {baseURL}mgramseva/feedBack?paymentId={}\&connectionno={}\&tenantId={}
 
-![](<../../../../.gitbook/assets/image (64).png>)
+![](<../../../../.gitbook/assets/image (101).png>)
 
 Users can switch to multiple languages.
 

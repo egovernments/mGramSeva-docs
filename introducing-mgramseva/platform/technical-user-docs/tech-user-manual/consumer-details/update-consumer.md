@@ -4,11 +4,11 @@
 
 This screen enables employees to update consumer details.
 
-<img src="../../../../../.gitbook/assets/image (97).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (118).png" alt="" data-size="original">
 
 Users are redirected to this screen/page when they click on the Update Consumer Details card.
 
-![](<../../../../../.gitbook/assets/image (58).png>)
+![](<../../../../../.gitbook/assets/image (29).png>)
 
 **Link**
 

@@ -6,7 +6,7 @@ The users receive a link via SMS. Clicking on this link redirects the users to t
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (42).png" alt="" width="180"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (33).png" alt="" width="180"><figcaption></figcaption></figure>
 
 </div>
 
@@ -16,7 +16,7 @@ The link in the SMS redirects users to this screen which is the first screen whi
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (85).png" alt="" width="180"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (133).png" alt="" width="180"><figcaption></figcaption></figure>
 
 </div>
 
@@ -26,7 +26,7 @@ The user enters the User ID, which is the registered mobile number of the user, 
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (53).png" alt="" width="206"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt="" width="206"><figcaption></figcaption></figure>
 
 </div>
 
@@ -38,7 +38,7 @@ The Forgot Password link navigates the user to the password reset screen.
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt="" width="180"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt="" width="180"><figcaption></figcaption></figure>
 
 </div>
 

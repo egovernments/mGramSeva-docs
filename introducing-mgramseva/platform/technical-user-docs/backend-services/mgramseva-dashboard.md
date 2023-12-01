@@ -14,7 +14,7 @@ This document explains the steps on how to define the configurations for the Ana
 
 **Analytics Configurations:** Analytics contains multiple configurations. we need to add the changes related to mGramseva in this dashboard-analytics.
 
-**Dashboard analytics link -** [**https://github.com/misdwss/config-mgramseva/tree/QA/egov-dss-dashboards/dashboard-analytics**](https://github.com/misdwss/config-mgramseva/tree/QA/egov-dss-dashboards/dashboard-analytics)****
+**Dashboard analytics link -** [**https://github.com/misdwss/config-mgramseva/tree/QA/egov-dss-dashboards/dashboard-analytics**](https://github.com/misdwss/config-mgramseva/tree/QA/egov-dss-dashboards/dashboard-analytics)
 
 Below is a list of configurations that need to be changed to run mGramSeva successfully.
 
@@ -137,7 +137,7 @@ Later, when the Role Action Mapping started controlling the Dashboards to be see
 * Transform collection schema for V2
   * This transform collection v1 configuration file is used to map with the incoming data. This mapped data will go inside the data object in the DSS collection v2 index.
 
-![](<../../../../.gitbook/assets/image (131).png>)
+![](<../../../../.gitbook/assets/image (102).png>)
 
 [Click here for an example configuration](https://github.com/misdwss/config-mgramseva/blob/QA/egov-dss-dashboards/dashboard-ingest/transform\_collection\_v1.json)
 
@@ -310,7 +310,7 @@ transform\_ws\_v1 configuration: [https://github.com/misdwss/config-mgramseva/bl
 
 Kafka connection and re-indexing is available in this documentation. Please check from here.
 
-****[mGramSeva Services Re-indexing ](mgramseva-services-re-indexing.md)
+[mGramSeva Services Re-indexing ](mgramseva-services-re-indexing.md)
 
 ## **Dashboard Service Changes**
 

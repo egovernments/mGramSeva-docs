@@ -2,7 +2,7 @@
 
 ## **About Git Actions**
 
-****<img src="../../../.gitbook/assets/image (119).png" alt="" data-size="line">GitHub Actions enables you to create custom software development lifecycle workflows\
+<img src="../../../.gitbook/assets/image (69).png" alt="" data-size="line">GitHub Actions enables you to create custom software development lifecycle workflows\
 directly in your GitHub repository. This enables you to include Continuous Integration (CI) and continuous deployment (CD) capabilities. **It makes it** easier to automate how you build, test,\
 and deploy your projects on any platform, including Linux, macOS, and Windows.&#x20;
 
@@ -25,11 +25,15 @@ Run your workflows in a virtual machine and local machine as well.
 
 ### **File Path**
 
-Primary Files **-** [**https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/screeens/SelectLanguage/languageSelection.dart**](https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/screeens/SelectLanguage/languageSelection.dart)****
+Primary Files **-** [**https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/screeens/SelectLanguage/languageSelection.dart**](https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/screeens/SelectLanguage/languageSelection.dart)
 
 ## **Integrating GitHub Actions In Project**
 
-![](<../../../.gitbook/assets/image (127).png>)
+<div align="left">
+
+<img src="../../../.gitbook/assets/image (93).png" alt="">
+
+</div>
 
 * Every command will be written in yml files and all these files will be in .github/workflows/ directory of your repository, then only git will identify our script files.
 * In our repository we are maintaining this file as main.yml, In this yml file we are executing the android drive job, which will run the integration testing scripts, once all the tests are passed then only it will build the app in QA ENV and store it in the artefacts as shown image.
@@ -98,14 +102,14 @@ jobs:
 
 ### **About Self-hosted Runner**
 
-We can host your own runners and customize the environment used to run jobs in your GitHub Actions workflows. **** Self-hosted runners can be physical, virtual, in a container, on-premises, or in a cloud.
+We can host your own runners and customize the environment used to run jobs in your GitHub Actions workflows. Self-hosted runners can be physical, virtual, in a container, on-premises, or in a cloud.
 
 With self-hosted runners, you can choose to create a custom hardware configuration with more processing power or memory to run larger jobs, install software available on your local network, and choose an operating system not offered by GitHub-hosted runners.
 
 ### **Integrating Self-hosted Runner With Local Machine**
 
 * On [https://github.com/](https://github.com/) navigate to the main page of the repository.
-* Under your repository name, click  **Settings** as shown in the image.![](<../../../.gitbook/assets/image (36).png>)
+* Under your repository name, click  **Settings** as shown in the image.![](<../../../.gitbook/assets/image (16).png>)
 * In the left sidebar, click **Actions**.
 * In the left sidebar, under "Actions", click **Runners**.
 * Click **New self-hosted runner.**
@@ -120,6 +124,6 @@ With self-hosted runners, you can choose to create a custom hardware configurati
 
 {% embed url="https://docs.github.com/en/actions/hosting-your-own-runners/adding-self-hosted-runners" %}
 
-****
+
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

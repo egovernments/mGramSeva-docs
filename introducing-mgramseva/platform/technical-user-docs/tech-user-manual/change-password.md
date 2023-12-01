@@ -4,7 +4,7 @@
 
 Users are redirected to this screen once they click on the Change Password option in the sidebar app drawer.
 
-![](<../../../../.gitbook/assets/image (83).png>)
+![](<../../../../.gitbook/assets/image (75).png>)
 
 **Link** → {base url}/mgramseva/home/changepassword
 
@@ -37,9 +37,7 @@ Primary Files:[ <img src="https://github.com/fluidicon.png" alt="" data-size="li
 
 ## **API Details**
 
-| End Point               | Request Method | Request Info                                                                                             |
-| ----------------------- | -------------- | -------------------------------------------------------------------------------------------------------- |
-| `user/password/_update` | `POST`         | <p>"userName": {},<br>"existingPassword": {},<br>"newPassword": {},<br>"tenantId": {},<br>"type": {}</p> |
+<table><thead><tr><th width="175.33333333333331">End Point</th><th>Request Method</th><th>Request Info</th></tr></thead><tbody><tr><td><code>user/password/_update</code></td><td><code>POST</code></td><td>"userName": {},<br>"existingPassword": {},<br>"newPassword": {},<br>"tenantId": {},<br>"type": {}</td></tr></tbody></table>
 
 **Stack**
 

@@ -6,7 +6,7 @@ Users are navigated to the Edit Profile screen once they click on the option on 
 
 **Link -** → {base url}/mgramseva/home/editProfile
 
-![](<../../../../.gitbook/assets/image (145).png>)
+![](<../../../../.gitbook/assets/image (79).png>)
 
 ## **User Interaction On Screen**
 

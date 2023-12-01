@@ -8,7 +8,7 @@ The Household Register tile/card is displayed to the user with `COLLECTION_OPERA
 
 **Link** → {base url}/mgramseva/home/householdRegister
 
-<figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 ## **User Interaction On Screen**
 
@@ -19,7 +19,7 @@ The Household Register tile/card is displayed to the user with `COLLECTION_OPERA
 * Click on the Download button to get all the household records in PDF format.
 * Click on Share to share the PDF on Whats App.
 
-![](<../../../../.gitbook/assets/image (75).png>)
+![](<../../../../.gitbook/assets/image (109).png>)
 
 ## **File Path**
 
@@ -53,13 +53,13 @@ Pop → View Consumer Details Screen → Household Register Screen
 
 **Widgets used from Library**
 
-| **Widgets**      | **File Path**                                                                                                                                                                                                                                                                                                                                                                                                    | **Description** |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
-| `Pagination`     | [<img src="https://github.com/fluidicon.png" alt="" data-size="line">](https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/pagination.dart)****[**https://github.com/misdwss/punjab-mgramseva/blob/master/frontend/mgramseva/lib/widgets/pagination.dart**](https://github.com/misdwss/punjab-mgramseva/blob/master/frontend/mgramseva/lib/widgets/pagination.dart)**** | Pagination      |
-| `BuildTextField` | [<img src="https://github.com/fluidicon.png" alt="" data-size="line">punjab-mgramseva/TextFieldBuilder.dart at master · misdwss/punjab-mgramseva](https://github.com/misdwss/punjab-mgramseva/blob/master/frontend/mgramseva/lib/widgets/TextFieldBuilder.dart)                                                                                                                                                  | Text Field      |
-| `BillsTable`     | [<img src="https://github.com/fluidicon.png" alt="" data-size="line">punjab-mgramseva/BillsTable.dart at master · misdwss/punjab-mgramseva](https://github.com/misdwss/punjab-mgramseva/blob/master/frontend/mgramseva/lib/components/Dashboard/BillsTable.dart)                                                                                                                                                 | Table           |
-| `LabelText`      | [<img src="https://github.com/fluidicon.png" alt="" data-size="line">punjab-mgramseva/LabelText.dart at master · misdwss/punjab-mgramseva](https://github.com/misdwss/punjab-mgramseva/blob/master/frontend/mgramseva/lib/widgets/LabelText.dart)                                                                                                                                                                | Title           |
-| `SubLabelText`   | [<img src="https://github.com/fluidicon.png" alt="" data-size="line">punjab-mgramseva/SubLabel.dart at master · misdwss/punjab-mgramseva](https://github.com/misdwss/punjab-mgramseva/blob/master/frontend/mgramseva/lib/widgets/SubLabel.dart)                                                                                                                                                                  | Subtitle        |
+| **Widgets**      | **File Path**                                                                                                                                                                                                                                                                                                                                                                                            | **Description** |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| `Pagination`     | [<img src="https://github.com/fluidicon.png" alt="" data-size="line">](https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/widgets/pagination.dart)[**https://github.com/misdwss/punjab-mgramseva/blob/master/frontend/mgramseva/lib/widgets/pagination.dart**](https://github.com/misdwss/punjab-mgramseva/blob/master/frontend/mgramseva/lib/widgets/pagination.dart) | Pagination      |
+| `BuildTextField` | [<img src="https://github.com/fluidicon.png" alt="" data-size="line">punjab-mgramseva/TextFieldBuilder.dart at master · misdwss/punjab-mgramseva](https://github.com/misdwss/punjab-mgramseva/blob/master/frontend/mgramseva/lib/widgets/TextFieldBuilder.dart)                                                                                                                                          | Text Field      |
+| `BillsTable`     | [<img src="https://github.com/fluidicon.png" alt="" data-size="line">punjab-mgramseva/BillsTable.dart at master · misdwss/punjab-mgramseva](https://github.com/misdwss/punjab-mgramseva/blob/master/frontend/mgramseva/lib/components/Dashboard/BillsTable.dart)                                                                                                                                         | Table           |
+| `LabelText`      | [<img src="https://github.com/fluidicon.png" alt="" data-size="line">punjab-mgramseva/LabelText.dart at master · misdwss/punjab-mgramseva](https://github.com/misdwss/punjab-mgramseva/blob/master/frontend/mgramseva/lib/widgets/LabelText.dart)                                                                                                                                                        | Title           |
+| `SubLabelText`   | [<img src="https://github.com/fluidicon.png" alt="" data-size="line">punjab-mgramseva/SubLabel.dart at master · misdwss/punjab-mgramseva](https://github.com/misdwss/punjab-mgramseva/blob/master/frontend/mgramseva/lib/widgets/SubLabel.dart)                                                                                                                                                          | Subtitle        |
 
 ## **Role Access Mapping**
 

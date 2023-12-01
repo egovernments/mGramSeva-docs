@@ -5,7 +5,11 @@
 Integration testing (also called end-to-end testing or GUI testing) is used to simulate a user interacting with your app by doing things like clicking buttons, selecting items, scrolling items, etc.\
 Integration testing is used to test how individual pieces work together as a whole or capture the performance of an application running on a real device.
 
-![](<../../../.gitbook/assets/image (110).png>)
+<div align="left">
+
+<img src="../../../.gitbook/assets/image (147).png" alt="">
+
+</div>
 
 ## **Plugins Used**
 
@@ -13,11 +17,15 @@ integration\_test
 
 ## **Integration Test Setup**
 
-![](<../../../.gitbook/assets/image (95).png>)
+<div align="left">
+
+<img src="../../../.gitbook/assets/image (84).png" alt="">
+
+</div>
 
 We declared the integration\_test package in pubspec.yaml as shown in the img above.
 
-![](<../../../.gitbook/assets/image (46).png>)
+![](<../../../.gitbook/assets/image (62).png>)
 
 * The test\_driver directory contains the integration\_test\_driver.dart file. (The folder structure is shown in image above). The integration driver is called from this file.
 * The integration\_test directory contains the test script files of different screens. &#x20;
@@ -29,7 +37,7 @@ There are two ways to start the integration testing**:**
 
 * To run the integration test on virtual emulator / mobile, run the command on your terminal :\
   `cd ./frontend/mgramseva && flutter drive --driver=test_driver/integration_test_driver.dart`\
-  `--target=integration_test/login_test.dart` ****&#x20;
+  `--target=integration_test/login_test.dart`&#x20;
 
 (...or...)
 

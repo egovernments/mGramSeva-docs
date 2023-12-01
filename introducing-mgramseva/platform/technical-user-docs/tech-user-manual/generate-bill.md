@@ -13,7 +13,7 @@ Users are redirected to this screen once they click on the Generate Demand card 
 
 * This is used in cases when the scheduler is not running (due to technical errors) and the GP wants to run it manually.
 
-![](<../../../../.gitbook/assets/image (34).png>)
+![](<../../../../.gitbook/assets/image (24).png>)
 
 **Link** → {base url}/mgramseva/home/billmanualgenerate
 
@@ -28,7 +28,7 @@ Users are redirected to this screen once they click on the Generate Demand card 
 * Set the Billing cycle which contains billing cycles for the selected financial year.
 * On clicking the Generate Demand Button, Bulk Demand is generated and the user is navigated to the success screen.
 
-![](<../../../../.gitbook/assets/image (20).png>)
+![](<../../../../.gitbook/assets/image (45).png>)
 
 ### **Logic Implemented For Billing Cycles**
 
@@ -78,7 +78,7 @@ Users are redirected to the Generate New Bill screen once they click on the Gene
 
 → {base url}/mgramseva/home/householddetails/billgenerate
 
-![](<../../../../.gitbook/assets/image (19).png>)
+![](<../../../../.gitbook/assets/image (9).png>)
 
 **Default Values Set**
 

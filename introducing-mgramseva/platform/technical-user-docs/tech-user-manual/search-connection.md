@@ -12,7 +12,7 @@ Users are redirected to this screen once they click on the Collect Payment card 
 
 &#x20;→ {base url}/mgramseva/home/householdReceiptsSearch?Mode=receipts
 
-![](<../../../../.gitbook/assets/image (63).png>)
+![](<../../../../.gitbook/assets/image (48).png>)
 
 ## **User Interaction On Screen**
 
@@ -34,9 +34,7 @@ Primary Files:[ <img src="https://github.com/fluidicon.png" alt="" data-size="li
 
 ## **API Details**
 
-| End Point                 | Request Method | Request Info                                                                                                       |
-| ------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------ |
-| `/ws-services/wc/_search` | `POST`         | <p>tenantId: {}</p><p>oldConnectionNumber: {}</p><p>name: {}</p><p>connectionNumber: {}</p><p>mobileNumber: {}</p> |
+<table><thead><tr><th>End Point</th><th width="170">Request Method</th><th>Request Info</th></tr></thead><tbody><tr><td><code>/ws-services/wc/_search</code></td><td><code>POST</code></td><td><p>tenantId: {}</p><p>oldConnectionNumber: {}</p><p>name: {}</p><p>connectionNumber: {}</p><p>mobileNumber: {}</p></td></tr></tbody></table>
 
 ### Stack
 

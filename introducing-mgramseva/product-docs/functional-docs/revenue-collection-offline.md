@@ -22,7 +22,7 @@ Once the demand is generated for metered and non-metered connections, revenue co
      * SMS 2 - Dear ‘Username’, Please leave a review on water supply at \<GP> at \<Link>
      * HH is able to leave a review for water charges. Refer [Feedback - Post Payments](https://ifix.digit.org/exemplar/mgramseva/features/feedback-post-payment)
 
-![](<../../../.gitbook/assets/image (107).png>)
+![](<../../../.gitbook/assets/image (136).png>)
 
 **Details on the card**&#x20;
 
@@ -36,7 +36,7 @@ Once the demand is generated for metered and non-metered connections, revenue co
 | Arrears          | All old arrears accumulated for HH                                                                                                                                                                                                                              | Expansion should breakup of arrears by individual billing cycles/bill generation dates                                               |
 | Total Due amount | Net amount consumer has to pay                                                                                                                                                                                                                                  |                                                                                                                                      |
 
-​![](<../../../.gitbook/assets/image (106).png>)![](<../../../.gitbook/assets/image (14).png>)
+​![](<../../../.gitbook/assets/image (124).png>)![](<../../../.gitbook/assets/image (35).png>)
 
 * When an online payment method is selected, the “Collect Payment” option is disabled. Since HH scans the QR, the Revenue collector does not have control over the online process.
 * The partial amount cannot be greater than the full amount.

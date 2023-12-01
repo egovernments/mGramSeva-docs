@@ -4,7 +4,7 @@
 
 Users can click on the Household Register on the home screen and navigate to this screen. This provides a single-view snapshot of all pending collections by consumers to date.
 
-![](<../../../.gitbook/assets/image (40).png>)
+![](<../../../.gitbook/assets/image (5).png>)
 
 ## Data Points
 

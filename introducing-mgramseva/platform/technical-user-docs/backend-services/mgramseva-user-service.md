@@ -23,9 +23,9 @@ Before you proceed with the configuration, make sure the following pre-requisite
 
 ## Interaction Diagram
 
-![](<../../../../.gitbook/assets/image (137).png>)
+![](<../../../../.gitbook/assets/image (103).png>)
 
-![](<../../../../.gitbook/assets/image (5).png>)
+![](<../../../../.gitbook/assets/image (31).png>)
 
 
 

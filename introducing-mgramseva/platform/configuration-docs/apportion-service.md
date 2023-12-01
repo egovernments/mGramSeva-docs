@@ -47,7 +47,7 @@ Any payment service which want to divide the paid amount in different tax head b
 #### Steps to Integration
 
 1. To integrate, host of egov-apportion-service should be overwritten in helm chart
-2. /apportion-service/v2/bill/\_apportion __ should be called to apportion the bill
+2. /apportion-service/v2/bill/\_apportion should be called to apportion the bill
 3. /apportion-service/v2/demand/\_apportion should be called to apportion advance amount in demands
 
 ### Reference Docs

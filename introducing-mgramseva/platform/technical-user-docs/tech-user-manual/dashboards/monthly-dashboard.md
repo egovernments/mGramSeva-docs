@@ -8,7 +8,7 @@ Users are redirected to this screen if they select the GPWSC Dashboard option on
 
 ## **User Interaction On Screen**
 
-****![](<../../../../../.gitbook/assets/image (41).png>)****
+![](<../../../../../.gitbook/assets/image (23).png>)
 
 * Users can select the year from the drop-down which contains the list of the last 5 Financial years, on tap of any year respective months will be displayed.
 * Users can see the user satisfaction average scores of the selected month.

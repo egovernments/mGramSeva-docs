@@ -11,6 +11,6 @@ This is an option to download bills without clicking on collect payment.
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (21).png" alt="" width="180"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34).png" alt="" width="180"><figcaption></figcaption></figure>
 
 </div>

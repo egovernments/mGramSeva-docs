@@ -306,7 +306,7 @@ The eChallan service is used to generate **e-challans / bill** for all miscellan
 #### Steps to Integration
 
 1. To integrate, host of echallan-services module should be overwritten in helm chart.
-2. echallan-services/eChallan/v1/\_create __ should be added as the create endpoint for creating eChallan in the system
+2. echallan-services/eChallan/v1/\_create should be added as the create endpoint for creating eChallan in the system
 3. echallan-services/eChallan/v1/\_search should be added as the search endpoint .This method handles all requests to search existing records depending on different search criteria
 4. echallan-services/eChallan/v1/\_update should be added as the update endpoint. This method is used to update fields in existing records or to update status of application based on workflow.
 

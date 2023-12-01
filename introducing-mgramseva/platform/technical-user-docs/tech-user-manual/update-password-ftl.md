@@ -6,7 +6,7 @@ Users are redirected to the Update Password screen once they log in successfully
 
 **Link:** → {base url}/mgramseva/selectLanguage/login/`updatepassword`
 
-``![](<../../../../.gitbook/assets/image (124).png>)``
+![](<../../../../.gitbook/assets/image (143).png>)
 
 ## **User Interaction On Screen**
 
@@ -65,7 +65,7 @@ Widgets utilized from library
 
 ## **Files Path**
 
-View → ****&#x20;
+View →&#x20;
 
 {% embed url="https://github.com/egovernments/punjab-mgramseva/blob/develop/frontend/mgramseva/lib/screeens/ResetPassword/Updatepassword.dart" %}
 

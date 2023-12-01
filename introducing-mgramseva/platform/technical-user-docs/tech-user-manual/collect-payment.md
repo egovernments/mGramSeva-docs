@@ -8,7 +8,7 @@ Collect Payment card is available on the home screen to the user role having the
 
 **Link** → {base url}/mgramseva/household/details/collectPayment
 
-![](<../../../../.gitbook/assets/image (77).png>)
+![](<../../../../.gitbook/assets/image (107).png>)
 
 ## **User Interaction On Screen**
 
@@ -38,7 +38,7 @@ If the due date is crossed, `billing-service/demand/_search` API gives the Time 
 
 The arrears are broken into 'BL\_(TaxHeadCode)' fetched from Bill Details-->Bill Account Details --> Tax Head Code. The amount of particular arrears is similar to the Bill Details--> Amount from the Fetch Bill API.
 
-![](<../../../../.gitbook/assets/image (82).png>)
+![](<../../../../.gitbook/assets/image (149).png>)
 
 (For instance, `if there are two bills with tax head codes is 10101 and 10102, then arrears break up is represented as BL_10101(Water Charges) with the corresponding amount and BL_10102(Water Charges-Arrears) with the corresponding amount`).
 

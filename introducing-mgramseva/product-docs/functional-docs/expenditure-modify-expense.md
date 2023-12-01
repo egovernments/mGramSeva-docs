@@ -10,7 +10,7 @@ Allows users to modify all the details except the Bill id. But the user has the 
 
 Does not allow users to modify any details. But the user has the option to mark the Bill as “Cancelled”.
 
-![](<../../../.gitbook/assets/image (103).png>)
+![](<../../../.gitbook/assets/image (123).png>)
 
 
 

@@ -6,7 +6,11 @@ Users land on the Language Selection screen.
 
 Link → {base url}/mgramseva/selectLanguage
 
-![App - initial screen](https://238770250-files.gitbook.io/\~/files/v0/b/gitbook-legacy-files/o/assets%2F-Mfb8ehcimjt6ER7QOME%2F-MkMbL3y8YcH5PxpU1GS%2F-MkMeKA4SjNd5S-OpRgR%2Fimage.png?alt=media\&token=3b886a41-753d-4592-8379-5aaed539ed53)
+<div align="left">
+
+<img src="https://238770250-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-Mfb8ehcimjt6ER7QOME%2F-MkMbL3y8YcH5PxpU1GS%2F-MkMeKA4SjNd5S-OpRgR%2Fimage.png?alt=media&#x26;token=3b886a41-753d-4592-8379-5aaed539ed53" alt="App - initial screen">
+
+</div>
 
 ## User Interaction On Screen <a href="#user-interaction-on-screen" id="user-interaction-on-screen"></a>
 
