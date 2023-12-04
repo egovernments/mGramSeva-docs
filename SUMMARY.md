@@ -82,7 +82,7 @@
       * [Getting Started With DIGIT](introducing-mgramseva/enablement-toolkits/setting-up-services/getting-started-with-digit.md)
       * [Creating Users](introducing-mgramseva/enablement-toolkits/setting-up-services/creating-users.md)
       * [Loading Employees For mGramSeva](introducing-mgramseva/enablement-toolkits/setting-up-services/loading-employees-for-mgramseva.md)
-      * [Loading Consumers for mgramseva](introducing-mgramseva/enablement-toolkits/setting-up-services/loading-consumers-for-mgramseva.md)
+      * [Loading Consumers For mGramSeva](introducing-mgramseva/enablement-toolkits/setting-up-services/loading-consumers-for-mgramseva.md)
       * [Localisation Module](introducing-mgramseva/enablement-toolkits/setting-up-services/localisation-module.md)
       * [Updating Master Rate for Mgramseva](introducing-mgramseva/enablement-toolkits/setting-up-services/updating-master-rate-for-mgramseva.md)
       * [Consumer API Documentation](introducing-mgramseva/enablement-toolkits/setting-up-services/consumer-api-documentation.md)

@@ -1,11 +1,10 @@
----
-description: >-
-  This documentation provides step-by-step instructions for using a Python
-  script to create consumers for Mgramseva. Follow these guidelines to
-  efficiently load consumer data into the system.
----
+# Loading Consumers For mGramSeva
 
-# Loading Consumers for mgramseva
+## Overview
+
+This page provides step-by-step instructions for using a Python script to create consumers for mGramSeva. Follow these guidelines to load consumer data into the system using the Python script provided.
+
+## Steps
 
 #### Step 1: Prepare Excel Sheet
 
@@ -36,15 +35,11 @@ Edit the Python script with the following details:
 
 ### 3. Running the Script
 
-Execute the Python script after configuring the host URL, username, password, and file path. The script will load data into Mgramseva based on the information provided in the Excel sheet.
+Execute the Python script after configuring the host URL, username, password, and file path. The script will load data into mGramSeva based on the information provided in the Excel sheet.
 
 ### 4. Post-Execution Steps
 
 Do not open the Excel file until the script completes its task. After completion, open the Excel file to check the status. The status will indicate whether the operation was successful or if there was a failure. If there's a failure, refer to the provided reason for further investigation and resolution.
-
-By following these steps diligently, you can efficiently create consumers for Mgramseva using the provided Python script.
-
-
 
 {% file src="../../../.gitbook/assets/Consumers.xlsx" %}
 
