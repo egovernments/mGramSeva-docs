@@ -75,7 +75,7 @@
     * [AWS Installation](introducing-mgramseva/enablement-toolkits/aws-installation/README.md)
       * [Setup AWS Account](introducing-mgramseva/enablement-toolkits/aws-installation/setup-aws-account.md)
       * [Certificate Purchase](introducing-mgramseva/enablement-toolkits/aws-installation/certificate-purchase.md)
-      * [Setting up Git Repository](introducing-mgramseva/enablement-toolkits/aws-installation/setting-up-git-repository.md)
+      * [Setup Git Repository](introducing-mgramseva/enablement-toolkits/aws-installation/setup-git-repository.md)
       * [Domain Name Configuration](introducing-mgramseva/enablement-toolkits/aws-installation/domain-name-configuration.md)
       * [Create a git account in the client name](introducing-mgramseva/enablement-toolkits/aws-installation/create-a-git-account-in-the-client-name.md)
     * [Setting up Services](introducing-mgramseva/enablement-toolkits/setting-up-services/README.md)

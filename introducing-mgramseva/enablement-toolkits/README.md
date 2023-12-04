@@ -1,5 +1,5 @@
 ---
-description: 'List of actions required to go live in the new State for the mgramseva module:'
+description: List of actions required to go live in the new State for the mGramSeva module
 ---
 
 # Enablement toolkits
