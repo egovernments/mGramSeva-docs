@@ -1,14 +1,16 @@
 # Updating Master Rate for Mgramseva
 
-This documentation outlines the step-by-step process for using a Python script to change master rates for Mgramseva in bulk. The script reads data from an Excel file, updates the master rates, and generates a new CSV file containing the modified information. Once the script is successfully executed, changes can be pushed to the local MDMS repository on GitHub.
+## Overview
 
-**Prerequisites:**
+This page outlines the step-by-step process for using a Python script to change master rates for mGramSeva in bulk. The script reads data from an Excel file, updates the master rates, and generates a new CSV file containing the modified information. Once the script is successfully executed, changes can be pushed to the local MDMS repository on GitHub.
+
+## **Pre-requisites**
 
 * Python script
 * MDMS repository cloned on the local system
 * Excel file with tenant names, old master rates, and new master rates
 
-**Steps:**
+## **Steps**
 
 **1. Prepare Excel File:**
 
@@ -25,7 +27,7 @@ This documentation outlines the step-by-step process for using a Python script t
 * Open the Python script and locate the variables:
   * `updatedfile`: Provide the path to your Excel sheet.
   * `localFilePath`: Specify the path where your MDMS repository is cloned.
-  * Identify the columns in the Excel file where Tenant Name, Old Master Rate, and New Master Rate are stored. Update the script accordingly:
+  * Identify the columns in the Excel file where the Tenant Name, Old Master Rate, and New Master Rate are stored. Update the script accordingly:
 
 ```
 uniqueVillageName = row[2].value
@@ -54,9 +56,7 @@ newMasterRate = row[8].value
 * It is crucial not to open the Excel file while the script is running to avoid data inconsistencies.
 * Ensure that the Python environment and dependencies are properly set up.
 
-Following these steps should enable you to efficiently update master rates for Mgramseva in bulk, ensuring accurate and streamlined changes to the MDMS repository.
-
-
+By following the steps above, you can efficiently update master rates for mGramSeva in bulk, ensuring accurate and streamlined changes to the MDMS repository.
 
 {% file src="../../../.gitbook/assets/Master Rate Tracking (1).xlsx" %}
 

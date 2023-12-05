@@ -4,9 +4,13 @@ description: Domain or subdomain registry and mapping cname
 
 # Domain Name Configuration
 
-Add AWS load balancer or gateway url as cname entry in domain DNS
+## Overview
 
-External IP will come from the AWS load balancer or gateway
+Follow the steps provided on this page to configure domains or subdomains registry and mapping CNAME.
+
+## Steps
+
+Create a CNAME (Canonical Name) entry in your domain's DNS settings and point it to the AWS load balancer or gateway URL. The external IP for the domain is provided by the AWS load balancer or gateway.
 
 **Introduction**
 
@@ -24,18 +28,15 @@ Following is the table through which the information can be shared.
 
 Note: The data given in the table is sample data.
 
-## Procedure <a href="#procedure" id="procedure"></a>
+## Process <a href="#procedure" id="procedure"></a>
 
 Since all state governments/clients prefer to host the websites on their servers, this activity is ideally done by them.
 
 ### Data Definition <a href="#data-definition" id="data-definition"></a>
 
-| Sr. No.                       | Column Name | Data Type    | Data Size | Is Mandatory? | Description                                                              |
-| ----------------------------- | ----------- | ------------ | --------- | ------------- | ------------------------------------------------------------------------ |
-| <ol start="1"><li> </li></ol> | Domain Name | Alphanumeric | 253       | Yes           | The name/address of the website being used to access the website/ module |
-| <ol start="1"><li> </li></ol> | EXTERNAL-IP | Alphanumeric | 32        | Yes           | It is the IP address that has to be mapped to the domain name            |
+<table data-header-hidden><thead><tr><th width="104"></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>Sr. No.</td><td>Column Name</td><td>Data Type</td><td>Data Size</td><td>Is Mandatory?</td><td>Description</td></tr><tr><td><ol start="1"><li> </li></ol></td><td>Domain Name</td><td>Alphanumeric</td><td>253</td><td>Yes</td><td>The name/address of the website being used to access the website/ module</td></tr><tr><td><ol start="1"><li> </li></ol></td><td>EXTERNAL-IP</td><td>Alphanumeric</td><td>32</td><td>Yes</td><td>It is the IP address that has to be mapped to the domain name</td></tr></tbody></table>
 
-### Steps to Fill Data <a href="#steps-to-fill-data" id="steps-to-fill-data"></a>
+### Steps To Fill Data <a href="#steps-to-fill-data" id="steps-to-fill-data"></a>
 
 Following are the steps which are to be followed:
 
@@ -44,15 +45,13 @@ Following are the steps which are to be followed:
 3. In case of any doubt, please reach out to the person who has shared this template with you to discuss and clear your doubts.
 4. If the state agrees to host the website on their server, provide them with the 2 columns mentioned in the attached template.
 5. If the state disagrees to host on their server, then a domain name has to be purchased by any of the external vendors and the EXTERNAL-IP address has to be mapped with them.
-6. Verify the data once again by going through the checklist and making sure that each and every point mentioned in the checklist is covered.
+6. Verify the data once again by going through the checklist and making sure that each point mentioned in the checklist is covered.
 
 ## Checklist <a href="#checklist" id="checklist"></a>
 
 This checklist covers all the activities that are common across the entities.
 
-| Sr. No. | Checklist Parameter                                                                | Example                                                                         |
-| ------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| 1       | Make sure that each and every point in this reference list has been taken care of. | [Checklist](https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/502203140) |
+<table data-header-hidden><thead><tr><th width="127.66666666666666"></th><th width="339"></th><th></th></tr></thead><tbody><tr><td>Sr. No.</td><td>Checklist Parameter</td><td>Example</td></tr><tr><td>1</td><td>Make sure that each and every point in this reference list has been taken care of.</td><td><a href="https://digit-discuss.atlassian.net/wiki/spaces/DO/pages/502203140">Checklist</a></td></tr></tbody></table>
 
 ## Attachments <a href="#attachments" id="attachments"></a>
 
