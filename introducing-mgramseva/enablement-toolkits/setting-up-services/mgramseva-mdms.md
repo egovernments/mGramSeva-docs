@@ -1,12 +1,16 @@
-# Mdms of mgramseva
+# mGramSeva MDMS
 
-Mgramseva's Master Data Management System ([MDMS](https://github.com/misdwss/mdms-mgramseva)) is organized into several folders, each containing essential JSON files that define various aspects of the application's configuration. This documentation provides an overview of the key folders and their respective files, along with a description of the data contained within each file.\
+## Overview
 
+mGramSeva's Master Data Management System ([MDMS](https://github.com/misdwss/mdms-mgramseva)) is organized into several folders, each containing essential JSON files that define various aspects of the application's configuration. This documentation provides an overview of the key folders and their respective files, along with a description of the data contained within each file.
+
+## Steps
 
 #### 1. [ACCESSCONTROL-ACTIONS-TEST](https://github.com/misdwss/mdms-mgramseva/tree/master/data/pb/ACCESSCONTROL-ACTIONS-TEST)
 
 This folder contains the `actions-test.json` file, which defines various API endpoints along with their configurations.
 
+{% code lineNumbers="true" %}
 ```json
 {
   "id": 11,
@@ -22,6 +26,7 @@ This folder contains the `actions-test.json` file, which defines various API end
 }
 
 ```
+{% endcode %}
 
 * `id`: Unique identifier for the API endpoint. Increase id with respect to id present in action-test.json file.
 * `name`: Name of the endpoint.
@@ -32,6 +37,7 @@ This folder contains the `actions-test.json` file, which defines various API end
 
 This folder contains the `roleactions.json` file, which associates roles with action IDs.
 
+{% code lineNumbers="true" %}
 ```json
 {
   "rolecode": "HRMS_ADMIN",
@@ -41,6 +47,7 @@ This folder contains the `roleactions.json` file, which associates roles with ac
 }
 
 ```
+{% endcode %}
 
 * `rolecode`: Code representing the role.
 * `actionid`: Action ID associated with the role, linking to entries in actions-test.json.
@@ -51,6 +58,7 @@ This folder contains the `roleactions.json` file, which associates roles with ac
 
 This folder contains the `roles.json` file, defining roles in the system.
 
+{% code lineNumbers="true" %}
 ```json
 {
   "code": "ANONYMOUS",
@@ -59,6 +67,7 @@ This folder contains the `roles.json` file, defining roles in the system.
 }
 
 ```
+{% endcode %}
 
 * `code`: Code representing the role.
 * `name`: Name of the role.
@@ -73,6 +82,7 @@ This folder contains various JSON files related to billing services.
 
 Defines business services, such as expenses like electricity bills and salaries.
 
+{% code lineNumbers="true" %}
 ```
 {
   "businessService": "EXPENSE.ELECTRICITY_BILL",
@@ -88,6 +98,7 @@ Defines business services, such as expenses like electricity bills and salaries.
 }
 
 ```
+{% endcode %}
 
 * `businessService`: Identifier for the business service.
 * `code`: Code representing the business service.
@@ -182,7 +193,7 @@ This folder contains expense type in JSON format.
 
 All (1 to 8 points) are state-level changes.
 
-9\. [**Tenant**](https://github.com/misdwss/mdms-mgramseva/tree/master/data/pb/aassalhihjag)[ **Folder**](https://github.com/misdwss/mdms-mgramseva/tree/master/data/pb/aassalhihjag) **(City level changes for every city there is one folder in mdms)**
+9\. [**Tenant**](https://github.com/misdwss/mdms-mgramseva/tree/master/data/pb/aassalhihjag)[ **Folder**](https://github.com/misdwss/mdms-mgramseva/tree/master/data/pb/aassalhihjag) **(City level changes for every city there is one folder in MDMS)**
 
 For each tenant, there is a unique folder containing three subfolders, each with its specific configuration files.
 
@@ -192,14 +203,15 @@ This file, located in the `billing service` folder, provides tenant-specific con
 
 #### 2. `boundary-data.json` - Location Boundary Data Configuration
 
-This file, located in the `egov-location` folder, contains boundary data specific to the tenant.
+This file, located in the `egov-location` folder contains boundary data specific to the tenant.
 
 Details of the structure and content of this file would be specific to the actual data in the system. Please refer to the specific `boundary-data.json` file for detailed information.
 
 #### 3. `WCBillingSlab.json` - Water Connection Billing Slab Configuration
 
-This file, found in the `ws-services-calculation` folder, defines billing slabs for water connection based on building type and connection type.
+This file, found in the `ws-services-calculation` folder defines billing slabs for water connection based on building type and connection type.
 
+{% code lineNumbers="true" %}
 ```json
 {
   "id": "1",
@@ -218,6 +230,7 @@ This file, found in the `ws-services-calculation` folder, defines billing slabs 
 }
 
 ```
+{% endcode %}
 
 * `id`: Unique identifier for the billing slab.
 * `buildingType`: Type of the building (e.g., RESIDENTIAL).
@@ -228,4 +241,4 @@ This file, found in the `ws-services-calculation` folder, defines billing slabs 
 
 This configuration is used to determine rates for water consumption based on the specified billing slab criteria.
 
-There is [tenant](https://github.com/misdwss/mdms-mgramseva/tree/master/data/pb/tenant) folder in mdms which contains all tenants in [tenants.json ](https://github.com/misdwss/mdms-mgramseva/blob/master/data/pb/tenant/tenants.json)file.
+There is a [tenant](https://github.com/misdwss/mdms-mgramseva/tree/master/data/pb/tenant) folder in the MDMS which contains all tenants in [tenants.json ](https://github.com/misdwss/mdms-mgramseva/blob/master/data/pb/tenant/tenants.json)file.

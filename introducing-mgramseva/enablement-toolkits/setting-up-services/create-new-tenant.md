@@ -1,11 +1,15 @@
-# Setting up a new tenant
+# Create New Tenant
+
+## Overview
 
 This documentation outlines the process of setting up a new tenant in MDMS (Master Data Management System). To achieve this, it involves cloning the MDMS repository locally and utilizing a Python script that interacts with an Excel file containing essential information for the new tenant setup.
 
-### Prerequisites
+## Pre-requisites
 
 1. Clone the [MDMS](https://github.com/misdwss/mdms-mgramseva) repository to your local machine.
 2. Have the Excel file ready for reference. The structure of the Excel file is critical, and any changes must align with the specified columns. The reference to the Excel file is given below.
+
+## Steps
 
 ### Python Script Configuration
 
@@ -43,5 +47,4 @@ Execute the Python script after configuring it according to your needs. The scri
 
 {% file src="../../../.gitbook/assets/create_tenants_json_Book2.py" %}
 
-After creating a tenant in the tenants.json file we need to make a separate folder in mdms for each tenant&#x20;
-
+After creating a tenant in the tenants.json file we need to make a separate folder in MDMS for each tenant.

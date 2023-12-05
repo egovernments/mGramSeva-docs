@@ -40,10 +40,10 @@ description: After AWS installation we need to setup some services which are as 
 [sms-template.md](sms-template.md)
 {% endcontent-ref %}
 
-{% content-ref url="mdms-of-mgramseva.md" %}
-[mdms-of-mgramseva.md](mdms-of-mgramseva.md)
+{% content-ref url="mgramseva-mdms.md" %}
+[mgramseva-mdms.md](mgramseva-mdms.md)
 {% endcontent-ref %}
 
-{% content-ref url="setting-up-a-new-tenant.md" %}
-[setting-up-a-new-tenant.md](setting-up-a-new-tenant.md)
+{% content-ref url="create-new-tenant.md" %}
+[create-new-tenant.md](create-new-tenant.md)
 {% endcontent-ref %}
