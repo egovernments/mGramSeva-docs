@@ -28,12 +28,12 @@ description: After AWS installation we need to setup some services which are as 
 [updating-master-rate-for-mgramseva.md](updating-master-rate-for-mgramseva.md)
 {% endcontent-ref %}
 
-{% content-ref url="consumer-api-documentation.md" %}
-[consumer-api-documentation.md](consumer-api-documentation.md)
+{% content-ref url="create-consumer-api.md" %}
+[create-consumer-api.md](create-consumer-api.md)
 {% endcontent-ref %}
 
-{% content-ref url="user-creation-api.md" %}
-[user-creation-api.md](user-creation-api.md)
+{% content-ref url="create-user-api.md" %}
+[create-user-api.md](create-user-api.md)
 {% endcontent-ref %}
 
 {% content-ref url="sms-template.md" %}
