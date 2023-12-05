@@ -1,10 +1,12 @@
----
-description: Setting up git repo for code, configs,V1 mdms, Infra As Code
----
+# Setup Git Repository
 
-# Setting up Git Repository
+## Overview
 
-Fork the following repos that contain the master data and default configs which you would customize as per your specific implementation later. Like (Master Data, ULB, Tenant details, Users, etc) to your respective GitHub organization account.
+This page provides step-by-step details on setting up a git repo for code, configs, V1 MDMS, and Infra As Code.
+
+## Steps
+
+Fork the following repos that contain the master data and default configurations. Customize these (master data, ULB, Tenant details, Users, etc) as per your specific implementation in your respective GitHub organization account.
 
 * ​[fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) both the [mdms](https://github.com/egovernments/egov-mdms-data/tree/UAT), and [config](https://github.com/egovernments/configs/tree/UAT) repos into your GitHub organization account
 * Once you fork the repos into your GitHub organization account, Create a [github user account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account), and generate an ssh authentication key( [generate new SSH key ](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)and [add it to above user account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
