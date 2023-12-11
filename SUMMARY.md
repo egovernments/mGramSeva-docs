@@ -90,6 +90,7 @@
       * [SMS Template](introducing-mgramseva/enablement-toolkits/setting-up-services/sms-template.md)
       * [mGramSeva MDMS](introducing-mgramseva/enablement-toolkits/setting-up-services/mgramseva-mdms.md)
       * [Create New Tenant](introducing-mgramseva/enablement-toolkits/setting-up-services/create-new-tenant.md)
+      * [Workflow](introducing-mgramseva/enablement-toolkits/setting-up-services/workflow.md)
   * [Product Docs](introducing-mgramseva/product-docs/README.md)
     * [Functional Docs](introducing-mgramseva/product-docs/functional-docs/README.md)
       * [Login & Forgot Password](introducing-mgramseva/product-docs/functional-docs/login-and-forgot-password.md)

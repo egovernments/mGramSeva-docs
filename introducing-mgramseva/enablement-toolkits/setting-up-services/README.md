@@ -47,3 +47,7 @@ description: After AWS installation we need to setup some services which are as 
 {% content-ref url="create-new-tenant.md" %}
 [create-new-tenant.md](create-new-tenant.md)
 {% endcontent-ref %}
+
+{% content-ref url="workflow.md" %}
+[workflow.md](workflow.md)
+{% endcontent-ref %}
