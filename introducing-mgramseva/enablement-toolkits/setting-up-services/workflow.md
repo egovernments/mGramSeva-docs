@@ -2,9 +2,15 @@
 
 ***
 
-#### Workflow Creation in mgramseva
+## Overview
 
-Follow these steps to create a workflow in mgramseva:
+This page provides the steps to follow to create a workflow in mGramSeva.
+
+## Steps
+
+#### Workflow Creation in mGramSeva
+
+Follow these steps to create a workflow in mGramSeva:
 
 1. **Check Existing Workflow:**
    * Utilize the provided Postman collection that includes workflow create and search APIs.
@@ -27,6 +33,6 @@ Follow these steps to create a workflow in mgramseva:
    * Use the search API to verify that the workflow has been successfully created.
    * Adjust the search parameters as needed.
 
-These steps ensure a smooth workflow creation process in mgramseva. Make sure to follow each step in sequence for a seamless experience.
+These steps ensure a smooth workflow creation process in mGramSeva. Make sure to follow each step in sequence for a seamless experience.
 
 ***
