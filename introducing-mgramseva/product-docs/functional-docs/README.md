@@ -94,14 +94,26 @@ The documents in this section provide the complete details of the&#x20;
 [household-register.md](household-register.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="tabular-dashboard-expense.md" %}
+[tabular-dashboard-expense.md](tabular-dashboard-expense.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="tabular-dashboard-collection.md" %}
+[tabular-dashboard-collection.md](tabular-dashboard-collection.md)
 {% endcontent-ref %}
 
 {% content-ref url="download-bills-and-receipt.md" %}
 [download-bills-and-receipt.md](download-bills-and-receipt.md)
+{% endcontent-ref %}
+
+{% content-ref url="app-force-update.md" %}
+[app-force-update.md](app-force-update.md)
+{% endcontent-ref %}
+
+{% content-ref url="hrms.md" %}
+[hrms.md](hrms.md)
+{% endcontent-ref %}
+
+{% content-ref url="advance-changes.md" %}
+[advance-changes.md](advance-changes.md)
 {% endcontent-ref %}
