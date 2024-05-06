@@ -47,7 +47,7 @@ The key benefits of using the mGramSeva app are listed below:
 * [ ] Easy consumer and vendor account generation and updation
 * [x] Easy to use and environmentally friendly&#x20;
 * [ ] Simple mobile app - saves time&#x20;
-* [ ] All accounts maintained digitally - saves paper
+* [ ] All accounts are maintained digitally - saves paper
 * [x] Accountability and Transparency&#x20;
 * [ ] Handover of records from one to another Sarpanch - easy and transparent&#x20;
 * [ ] Dashboards to give easy and effective visualization of GPWSCs&#x20;
@@ -67,7 +67,7 @@ The key benefits of using the mGramSeva app are listed below:
 
 ## Features
 
-mGramSeva offers multiple features required to manage revenues and expenditure (listed below).
+mGramSeva offers multiple features required to manage revenues and expenditures (listed below).
 
 * [x] Create and maintain household registers
 * [x] Collect payments
@@ -99,6 +99,3 @@ This section contains all docs and information required to understand the mGramS
 
 {% embed url="https://egov.org.in/contact/" %}
 
-
-
-&#x20;[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
