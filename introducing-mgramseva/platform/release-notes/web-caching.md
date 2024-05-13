@@ -1,5 +1,5 @@
 ---
-description: To remove the cache data whenever a new build is deployed
+description: How to remove the cache data whenever a new build is deployed
 ---
 
 # Web Caching
@@ -21,7 +21,8 @@ The build number of the application is compared every time we hit the URL. If th
 Here, 17 is the build number.
 
 {% hint style="info" %}
-_**Note: Add all localizations to the respective environment, before deploying the build to any env.**_
+**Note: Add all localizations to the respective environment, before deploying the build to any environment.**
 {% endhint %}
 
 If we add new localizations after deploying the build, we need to increment the build version and deploy a new build to reflect those localizations. The previous web cache validates the build number check and does not delete the localization messages stored in the local storage.
+

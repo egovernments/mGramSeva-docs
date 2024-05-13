@@ -8,7 +8,7 @@ description: mGramSeva architecture details
 
 mGramSeva is built on top of the [DIGIT ](https://docs.digit.org/)Platform. It consists of distinct layers listed below.​
 
-Back End
+**Back End**
 
 * Core Services
   1. ​[User Services ](https://core.digit.org/platform/core-services/user-services)(egov-user)
@@ -44,7 +44,11 @@ Back End
   6. ​[Vendor](configuration-docs/vendor-registry-service.md)​
   7. ​[IFIX Adaptor Integration Service](https://ifix.digit.org/exemplar/mgramseva/user-manual/backend-services/ifix-adapter-integration-service)​
 
-![](https://238770250-files.gitbook.io/\~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS0VW1NVyguqXxlketbHB%2Fuploads%2FqWk2FvJIJ8btK9FcE15A%2FeGov\_MgramSeva\_Architecture.png?alt=media\&token=9b7d18b6-fbed-49a6-b258-da64785a7689)
+<div align="left">
+
+<img src="https://238770250-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FS0VW1NVyguqXxlketbHB%2Fuploads%2FqWk2FvJIJ8btK9FcE15A%2FeGov_MgramSeva_Architecture.png?alt=media&#x26;token=9b7d18b6-fbed-49a6-b258-da64785a7689" alt="">
+
+</div>
 
 ## mGramSeva Architecture Diagram
 

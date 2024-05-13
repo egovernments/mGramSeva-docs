@@ -1,55 +1,53 @@
 # Vendor Registry Service
 
-### Overview
+## Overview
 
-Vendor Registry is a system that enables ULBEmployees to create and search Vendor i.e Desluding Operator (DSO) and driver entities with appropriate vehicle Entities for FSM Application. This document contains the details about how to setup the Vendor and describe the functionalities provided.
+Vendor Registry is a system that enables ULBEmployees to create and search Vendors i.e. Desluding Operator (DSO) and driver entities with appropriate vehicle Entities for FSM Applications. This document contains details on how to set up the Vendor and describes the functionalities provided.
 
-### Pre-requisites
+## Pre-requisites
 
 Before you proceed with the configuration, make sure the following pre-requisites are met -
 
 * _Java 8_
-* Kafka server is up and running
-* egov-persister service is running and has vendor-persister config path added in it
-* PSQL server is running and database is created to store FSM Application data
-* Following services should be up and running:
+* The Kafka server is up and running
+* egov-persister service is running and has a vendor-persister config path added to it
+* PSQL server is running and a database is created to store FSM Application data
+* The following services should be up and running:
   * egov-mdms-service
   * egov-user-service
   * boundary-service
   * vehicle
 
-### Key Functionalities
+## Key Functionalities
 
 1. Added payment payment preference and agency attributes for DSO
 2. Added gender attribute in the create and update APIs for Vendor
-3. Updated the Vendor search API to added vehicleCapacity in the search parameter to search all vendors matching the vehicle capacity specified in the search parameter.
+3. Updated the Vendor search API to add vehicleCapacity in the search parameter to search all vendors matching the vehicle capacity specified in the search parameter.
 
 ### Deployment Details
 
-1. Deploy the latest version of vendor
-2. Add vendor-persister.yml file in config folder in git and add that path in persister . _(The file path is to be added in environment yaml file in param called_ persist-yml-path _) and restart_ egov-persister-service.
-3.  Integrate the following below changes in vendor-persister.yml
+1. Deploy the latest version of the vendor
+2. Add vendor-persister.yml file in the config folder in git and add that path in persister. _(The file path is to be added in the environment yaml file in a param called_ persist-yml-path _) and restart_ egov-persister-service.
+3.  Integrate the below changes in vendor-persister.yml
 
     [https://github.com/egovernments/configs/commit/95dd26f926ec44d07448926ee4b6b7e031847a57](https://github.com/egovernments/configs/commit/95dd26f926ec44d07448926ee4b6b7e031847a57)
 4. [https://github.com/egovernments/configs/pull/2237/files](https://github.com/egovernments/configs/pull/2237/files)
 
-### Configuration Details
+## Configuration Details
 
-#### MDMS Configuration   
+### MDMS Configuration 
 
 NA
 
-#### Business Service / Workflow Configuration
+### Business Service / Workflow Configuration
 
 &#x20;
 
 NA
 
-#### Actions & Role Action Mapping
+### Actions & Role Action Mapping
 
-&#x20;
-
-After adding Actions and role-action mappings , restart the egov-mdms-service
+After adding Actions and role-action mappings, restart the egov-mdms-service.
 
 **Actions**
 
@@ -79,12 +77,7 @@ After adding Actions and role-action mappings , restart the egov-mdms-service
 
 ```
 
-\
-**Role Action Mapping**\
-\
-\
-\
-
+**Role Action Mapping**
 
 ```
 [
@@ -134,14 +127,11 @@ After adding Actions and role-action mappings , restart the egov-mdms-service
 
 ```
 
-&#x20;
+### **Infra Ops Configuration**
 
-**Infra Ops Configuration**
+Configurations we can manage through values.yml of the vendor in the infra ops repo are as follows: values.yml for a vehicle can be found.
 
-Configurations that we can manage through values.yml of vendor in infraops repo as follows\
-values.yml for vehicle can be found
-
-| **Description**                                           | **name in values.yml**             | **Current Value**                        |
+| Description                                               | name in values.yml                 | Current Value                            |
 | --------------------------------------------------------- | ---------------------------------- | ---------------------------------------- |
 | Kafka Consumer Group                                      | SPRING\_KAFKA\_CONSUMER\_GROUP\_ID | egov-vendor-services                     |
 | kafka topic to which service push data to save new Vendor | PERSISTER\_SAVE\_VENDOR\_TOPIC     | save-vendor-application                  |
@@ -149,7 +139,6 @@ values.yml for vehicle can be found
 | Vehicle Service host                                      | EGOV\_VEHICLE\_HOST                | vehicle from egov-service-host           |
 | User service host                                         | EGOV\_USER\_HOST                   | egov-user-service from egov-service-host |
 | Location Service Host                                     | EGOV\_LOCATION\_HOST               | egov-location from egov-service-host     |
-|                                                           |                                    |                                          |
 
 **Configurations sample in Values.yml**
 
@@ -237,18 +226,12 @@ env: |
   - name: TRACER_OPENTRACING_ENABLED
     value: "true" 
   {{- end }}
-
+ 
 ```
-
-&#x20;
 
 ### Data Setup
 
-&#x20;
-
-DSO for FSM System is a vendor, For every city/ULB DSO should be created with the Representative details as owner, associated vehicles and drivers
-
-&#x20;
+DSO for FSM System is a vendor, For every city/ULB DSO should be created with the Representative details as owner, associated vehicles and drivers.
 
 Sample Curl
 
@@ -399,38 +382,32 @@ curl --location --request POST 'https://dev.digit.org/vendor/v1/_create' \
 
 ```
 
-&#x20;
+## Integration Details
 
-### Integration
+### Integration Scope
 
-#### Integration Scope
+Any system or DIGIT module can integrated with Vendor Service, which helps to manage the Vendor with the vehicles, drivers and owner for the representative and login for the representative/owner to log into the system to carry our role-specific operations
 
-Any system or digit module can integrated with Vendor Service, helps to manage the Vendor with the vehicles, drivers and owner for representative and login for the representative/owner to login into the system to carry our role specific operations
-
-#### Integration Benefits
+### Integration Benefits
 
 * Validation of DSO/Vendor availability
 * Fetch the vehicle assigned to the DSO
 * Fetch the Drivers assigned to the DSO
 
-#### Steps to Integration
+### Integration Steps
 
-* FSM to call vendor/v1/\_search to fetch the DSO’s
-* FSM can call vendor/v1/\_search to fetch the DSO’s and the respective vehicles and drivers
+* FSM to call vendor/v1/\_search to fetch the DSOs
+* FSM can call vendor/v1/\_search to fetch the DSOs and the respective vehicles and drivers
 
 ### Interaction Diagram
 
 TBD
 
-### Reference Docs
+## Reference Docs
 
 #### API List
 
-| <h4><strong>Title</strong> </h4> | **Link**                                                                                                                   |
-| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| /vendor/v1/\_create              | [https://www.getpostman.com/collections/c79e98843bcdcc873d09](https://www.getpostman.com/collections/c79e98843bcdcc873d09) |
-| /vendor/v1/\_search              | [https://www.getpostman.com/collections/c79e98843bcdcc873d09](https://www.getpostman.com/collections/c79e98843bcdcc873d09) |
-| /vendor/v1/\_plainsearch         | [https://www.getpostman.com/collections/c79e98843bcdcc873d09](https://www.getpostman.com/collections/c79e98843bcdcc873d09) |
+<table data-header-hidden><thead><tr><th width="228"></th><th></th></tr></thead><tbody><tr><td><h4><strong>Title</strong> </h4></td><td><strong>Link</strong></td></tr><tr><td>/vendor/v1/_create</td><td><a href="https://www.getpostman.com/collections/c79e98843bcdcc873d09">https://www.getpostman.com/collections/c79e98843bcdcc873d09</a></td></tr><tr><td>/vendor/v1/_search</td><td><a href="https://www.getpostman.com/collections/c79e98843bcdcc873d09">https://www.getpostman.com/collections/c79e98843bcdcc873d09</a></td></tr><tr><td>/vendor/v1/_plainsearch</td><td><a href="https://www.getpostman.com/collections/c79e98843bcdcc873d09">https://www.getpostman.com/collections/c79e98843bcdcc873d09</a></td></tr></tbody></table>
 
 &#x20;
 
