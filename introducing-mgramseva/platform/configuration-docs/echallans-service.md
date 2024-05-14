@@ -2,7 +2,6 @@
 
 ## Overview
 
-\
 eChallan system enables employees to generate the challans for Adhoc services so that the payment can be recorded into the system along with service-specific details.
 
 It also enables citizens to make payments online based on challan numbers.
@@ -12,14 +11,14 @@ It also enables citizens to make payments online based on challan numbers.
 Before you proceed with the documentation, make sure the following pre-requisites are met -
 
 * _Java 8_
-* Kafka server is up and running
+* The Kafka server is up and running
 * egov-persister service is running and has an eChallan persister config path added to it
 * PSQL server is running and a database is created to store eChallan data
 
 ## Key Functionalities
 
 * Allow employees to capture service details for miscellaneous services and collect payment
-* Allow employees to update/cancel challan.
+* Allow employees to update/cancel challan
 * Search, download, and print echallan / bill for miscellaneous service
 * Generate and view echallan / bill pdf for all miscellaneous and ad-hoc services
 * Send an SMS and an email bill notification to the citizen with a payment link and bill link
@@ -272,10 +271,10 @@ Roles available:
 
 ## Deployment Details
 
-1. Add mdms configs required for eChallan Service and calculator and restart mdms service.
+1. Add MDMS configurations required for eChallan Service and calculator and restart the MDMS service.
 2. Deploy the latest version of eChallan Service and calculator.
-3. Add eChallan Service persister yaml path in persister configuration and restart persister service
-4. Add Role-Action mapping for API’s.
+3. Add eChallan Service persister yaml path in persister configuration and restart persister service.
+4. Add Role-Action mapping for APIs.
 5. Add pdf configuration file for challan and bill.
 
 ## Integration Details
@@ -287,19 +286,19 @@ The eChallan service is used to generate **e-challans / bills** for all miscella
 ### Integration Benefits
 
 * Can perform service-specific business logic without impacting the other module.
-* Provides the capability of capturing the unique identifier of the entity for which the challan is generated.
-* In the future, if we want to expose the application to citizens then it can be done easily.
-* Workflow or Service-specific workflow can be enabled at the challan service level at any time without changing the design.
-* Allow employees to update/cancel challan
+* Allows capturing the unique identifier of the entity for which the challan is generated.
+* In the future, if we decide to make the application accessible to citizens, it can be done effortlessly.
+* Workflow or service-specific workflow can be enabled at the challan service level at any time, without the need for any design changes.
+* Allow employees to update/cancel challan.
 
 ### Integration Steps
 
-1. To integrate, the host of echallan-services module should be overwritten in the helm chart.
-2. echallan-services/eChallan/v1/\_create should be added as the create endpoint for creating eChallan in the system
-3. echallan-services/eChallan/v1/\_search should be added as the search endpoint. This method handles all requests to search existing records depending on different search criteria
+1. To integrate, you need to overwrite the host of the echallan-services module in the Helm chart.
+2. echallan-services/eChallan/v1/\_create should be added as the create endpoint for creating eChallan in the system.
+3. echallan-services/eChallan/v1/\_search should be added as the search endpoint. This method handles all requests to search existing records depending on different search criteria.
 4. echallan-services/eChallan/v1/\_update should be added as the update endpoint. This method is used to update fields in existing records or to update the status of applications based on workflow.
 
-### Reference Docs
+## Reference Docs
 
 #### Doc Links
 
