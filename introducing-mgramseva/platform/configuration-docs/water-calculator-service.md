@@ -363,9 +363,9 @@ After updating if the WATER\_CHARGE increases to 150 we add one more demand deta
 
 Round-off in the bill is based on the total amount, ensuring that the payable amount is a whole number. Each WS\_ROUNDOFF in the demand detail can be greater than 0.5, but the sum of all WS\_ROUNDOFF values is always less than 0.5.
 
-### Scheduler for generating the demand (For non metered connection):
+### Demand Generation Scheduler (For Non-metered Connection)
 
-_**Description:**_
+**Description**
 
 To generate demand for non-metered connections, we have a feature for batch demand generation. The scheduler is responsible for generating demand based on the tenant.
 

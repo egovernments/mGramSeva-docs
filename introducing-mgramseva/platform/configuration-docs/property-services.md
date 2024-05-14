@@ -6,35 +6,31 @@ One of the major applications of the eGov stack is that it helps municipalities 
 
 ## **Pre-requisites**
 
-* Prior knowledge of Java/J2EE
-* Prior knowledge of Spring Boot
-* Prior knowledge of REST APIs and related concepts like path parameters, headers, JSON etc.
-* Prior knowledge of Git
-* Prior knowledge of the demand-based systems
-* The following services should be up and running:
-  * user
-  * MDMS
-  * Persister
-  * Location
-  * Localization
-  * Id-Gen
-  * Billing-service
-  * URL-shortener
+1. Prior knowledge of Java/J2EE
+2. Prior knowledge of Spring Boot
+3. Prior knowledge of REST APIs and related concepts like path parameters, headers, JSON etc.
+4. Prior knowledge of Git
+5. Prior knowledge of the demand-based systems
+6. The following services should be up and running:
+   * user
+   * MDMS
+   * Persister
+   * Location
+   * Localization
+   * Id-Gen
+   * Billing-service
+   * URL-shortener
 
 ## **Key Functionalities**
 
 The Property Service provides multiple functionalities starting from serving as a central repository where property information is registered for reference of citizens and other municipality-provided services such as water connection and sewerage management.\
 An assessment can be done to calculate and pay tax on the property. The different services provided by the property services are -
 
-Property Registry
-
-Assessment
-
-Mutation
-
-Bifurcation
-
-consolidation
+* Property Registry
+* Assessment
+* Mutation
+* Bifurcation
+* Consolidation
 
 **Registry Explanation**
 
@@ -53,7 +49,7 @@ The persister file configuration for property services can be found in the Confi
 
 ### **Workflow Configurations**
 
-Each flow in property has a workflow associated with it, which can be controlled by the following configurations.
+Each flow in the property has a workflow associated with it, which can be controlled by following configurations.
 
 The Boolean field can enable/disable Workflow - the same field controls the update and creates the workflow.
 
