@@ -35,16 +35,6 @@ Before you proceed with the configuration, make sure the following pre-requisite
 
 ## Configuration Details
 
-### MDMS Configuration 
-
-NA
-
-### Business Service / Workflow Configuration
-
-&#x20;
-
-NA
-
 ### Actions & Role Action Mapping
 
 After adding Actions and role-action mappings, restart the egov-mdms-service.
@@ -399,16 +389,10 @@ Any system or DIGIT module can integrated with Vendor Service, which helps to ma
 * FSM to call vendor/v1/\_search to fetch the DSOs
 * FSM can call vendor/v1/\_search to fetch the DSOs and the respective vehicles and drivers
 
-### Interaction Diagram
-
-TBD
-
 ## Reference Docs
 
 #### API List
 
 <table data-header-hidden><thead><tr><th width="228"></th><th></th></tr></thead><tbody><tr><td><h4><strong>Title</strong> </h4></td><td><strong>Link</strong></td></tr><tr><td>/vendor/v1/_create</td><td><a href="https://www.getpostman.com/collections/c79e98843bcdcc873d09">https://www.getpostman.com/collections/c79e98843bcdcc873d09</a></td></tr><tr><td>/vendor/v1/_search</td><td><a href="https://www.getpostman.com/collections/c79e98843bcdcc873d09">https://www.getpostman.com/collections/c79e98843bcdcc873d09</a></td></tr><tr><td>/vendor/v1/_plainsearch</td><td><a href="https://www.getpostman.com/collections/c79e98843bcdcc873d09">https://www.getpostman.com/collections/c79e98843bcdcc873d09</a></td></tr></tbody></table>
-
-&#x20;
 
 &#x20;

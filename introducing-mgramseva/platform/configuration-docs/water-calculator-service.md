@@ -1,42 +1,42 @@
 # Water Calculator Service
 
-### Overview
+## Overview
 
-Water Calculator Service is used for creating meter reading, searching meter reading, updating existing meter reading, calculation of water charge, demand generation, SMS & email notification to ULB officials on-demand generation and estimation of water charge(one-time cost) which involves cost like road-cutting charge, form fee, scrutiny fee, etc.
+Water Calculator Service is used to create meter readings, search meter readings, update existing meter readings, calculate water charges, generate demand, notify ULB officials using SMS & email on-demand generation and estimation of water charges (one-time cost) which involves costs like road-cutting charge, form fee, scrutiny fee, etc.
 
-### Pre-requisites
+## Pre-requisites
 
 Before you proceed with the documentation, make sure the following pre-requisites are met -
 
 * _Java 8_
-* Kafka server is up and running
-* egov-persister service is running and has water service persister configs path added in it
-* PSQL server is running and database is created to store water connection / application data
-* Following services should be up and running:
+* The Kafka server is up and running
+* egov-persister service is running and has the water service persister configs path added to it
+* PSQL server is running and a database is created to store water connection/application data
+* The following services should be up and running:
   * egov-perister
   * egov-mdms
   * ws-services
   * billing-service
 
-### Key Functionalities
+## Key Functionalities
 
-* Calculate water charge and taxes based on billing slab.
+* Calculate water charges and taxes based on the billing slab.
 * Calculate meter reading charge for water connection
 * Generate demand
-* Scheduler for generating the demand(for non metered connection)
+* Scheduler for generating the demand(for non-metered connection)
 
-### Deployment Details
+## Deployment Details
 
 1. Deploy the latest version of ws-service and ws-calculator
-2. Add water-persist.yml & water-meter.yml file in config folder in git and add that path in persister . _(The file path is to be added in environment yaml file in param called_ persist-yml-path _)_
+2. Add water-persist.yml & water-meter.yml files in the config folder in git and add that path in persister. _(The file path is to be added in the environment yaml file in a param called_ persist-yml-path _)._
 
-### Configuration Details
+## Configuration Details
 
-#### MDMS Configuration
+### MDMS Configuration
 
 #### **Billing Slabs:**
 
-Criteria :
+Criteria
 
 1. connection type
 2. building type
@@ -103,11 +103,11 @@ The combination of the above can be used to define the billing slab. Billing Sla
     },
 ```
 
-If all criteria will match for that water connection this slab will use for calculation.
+If all criteria match for the water connection the specific slab will be used for calculation.
 
 #### **Estimation:**
 
-For application one-time fee, the estimation will return all the related tax head based on criteria. For estimation, all configuration is present in ws-services-calculation.
+For the application one-time fee, the estimation will return all the related tax heads based on criteria. For estimation, all configurations are present in ws-services-calculation.
 
 1. [FeeSlab.json](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/ws-services-calculation/FeeSlab.json)
 2. [PlotSizeSlab.json](https://github.com/egovernments/egov-mdms-data/blob/master/data/pb/ws-services-calculation/PlotSizeSlab.json)
@@ -128,11 +128,11 @@ Following are the exemptions and taxes that are calculated:
 
 #### Water Charge and Tax:
 
-Water charge is based on billing slab, for water application charge will be based on slab and tax based on master configuration.
+The water charge is based on the billing slab and for water application charge will be based on the slab and tax based on the master configuration.
 
 **Interest:**
 
-Below is a sample of master data JSON for interest :
+Below is a sample of the master data JSON for interest :
 
 ```
 {
@@ -154,7 +154,7 @@ Below is a sample of master data JSON for interest :
 
 **Penalty:**
 
-Below is a sample of master data JSON for penalty :
+Below is a sample of the master data JSON for penalty:
 
 ```
 {
@@ -175,11 +175,10 @@ Below is a sample of master data JSON for penalty :
 
 **Round Off:**
 
-If the fraction is greater than equal to 0.5 the number is round up else it’s round down. eg: 100.4 will be rounded to 100 while 100.6 will be rounded to 101.
+If the fraction is greater than equal to 0.5 the number is rounded up else it’s rounded down. eg: 100.4 will be rounded to 100 while 100.6 will be rounded to 101.
 
-#### Actions & Role Action Mapping
+### Actions & Role Action Mapping
 
-\
 **Actions**
 
 ```
@@ -248,9 +247,7 @@ If the fraction is greater than equal to 0.5 the number is round up else it’s 
 
 ```
 
-\
-**Role Action Mapping**\
-
+**Role Action Mapping**
 
 ```
 [
@@ -299,16 +296,13 @@ If the fraction is greater than equal to 0.5 the number is round up else it’s 
 ]
 ```
 
-\
+### Demand Generation
 
+Once water is sent to the calculator its tax estimates are calculated. Using this tax head estimates demand details are created. For every tax head, the estimated demand generates function will create a corresponding demand detail.
 
-### Demand Generation:
+Whenever \_calculate API is called demand is first searched based on the connection no or application no and the demand from and to period. If demand already exists the same demand is updated else new demand is generated with consumer code as connection no or application no and demand from and to a period equal to the financial year start and end period.
 
-Once water is sent to calculator it’s tax estimates are calculated. Using this tax head estimates demand details are created. For every tax head, estimate demand generates function will create a corresponding demand detail.
-
-Whenever \_calculate API is called demand is first searched based on the connection no or application no and the demand from and to period. If demand already exists the same demand is updated else new demand is generated with consumer code as connection no or application no and demand from and to a period equal to financial year start and end period.
-
-In case of the update if the tax head estimates change, the difference in amount for that tax head is added as new demand detail. For example, if the initial demand has one demand detail with WATER\_CHARGE equal to 120
+In case of the update, if the tax head estimates change, the difference in amount for that tax head is added as a new demand detail. For example, if the initial demand has one demand detail with WATER\_CHARGE equal to 120
 
 ```
 "demandDetails": [
@@ -367,64 +361,64 @@ After updating if the WATER\_CHARGE increases to 150 we add one more demand deta
             ],
 ```
 
-RoundOff is bill based i.e every time bill is generated round off is adjusted so that payable amount is the whole number. Individual WS\_ROUNDOFF in demand detail can be greater than 0.5 but the sum of all WS\_ROUNDOFF will always be less than 0.5.
+RoundOff is bill-based i.e. every time a bill is generated round-off is adjusted so that the payable amount is the whole number. Individual WS\_ROUNDOFF in demand detail can be greater than 0.5 but the sum of all WS\_ROUNDOFF will always be less than 0.5.
 
 ### Scheduler for generating the demand(For non metered connection):
 
 _**Description :**_
 
-For generating the demand for non metered connection we have a feature for generating the demand in batch. The scheduler is responsible for generating the demand based on the tenant.
+For generating the demand for non-metered connection we have a feature for generating the demand in batch. The scheduler is responsible for generating the demand based on the tenant.
 
-* The scheduler can be hit by scheduler API or we can schedule cron job or we can put config to kubectl which will hit scheduler based on config.
-* After the scheduler been hit we will search the list of the tenant (city) present in the database.
-* After getting the tenants we will pickup tenant one by one and generate the demand for that tenant.
+* The scheduler can be hit by scheduler API or we can schedule a cron job or we can put config to kubectl which will hit scheduler based on config.
+* After the scheduler has been hit we will search the list of the tenant (city) present in the database.
+* After getting the tenants we will pick up tenants one by one and generate the demand for that tenant.
 * We will load the consumer codes for the tenant and push the calculation criteria to Kafka. Calculation criteria contain minimal information (We are not pushing large data to Kafka), calculation criteria contain consumer code and one boolean variable.
-* After pushing the data into Kafka we are consuming the records based on the batch configuration. Ex:-> if the batch configuration is 50 so we will consume the 50 calculation criteria at a time.
+* After pushing the data into Kafka we are consuming the records based on the batch configuration. Ex:-> If the batch configuration is 50 we will consume the 50 calculation criteria at a time.
 * After consuming the record(Calculation criteria) we will process the batch for generating the demand. If the batch is successful so will log the consumer codes which have been processed.
-* If some records failed in batch so we will push the batch into dead letter batch topic. From the dead letter batch topic, we will process the batch one by one.
-* If the record is successful we will log the consumer code, If the record is failed so we will push the data into a dead letter single topic.
+* If some records fail in the batch we will push the batch into the dead letter batch topic. From the dead letter batch topic, we will process the batch one by one.
+* If the record is successful we will log the consumer code, If the record fails we will push the data into a dead letter single topic.
 * Dead letter single topic contains information about failure records in Kafka.
 
 _**Use cases:**_
 
-1. If the same job trigger multiple time what will happen?
+1. If the same job triggers multiple times what will happen?
 
-If the same job triggers multiple times we will process again as mentioned above but at the demand level we will check the demand based on consumer code and billing period, If demand already exists then we will update the demand otherwise we will create the demand.
+If the same job triggers multiple times we will process it again as mentioned above but at the demand level we will check the demand based on consumer code and billing period, If demand already exists then we will update the demand otherwise we will create the demand.
 
 1. Are we maintaining success or failure status anywhere?
 
 Currently, we are maintaining the status of failed records in Kafka.
 
-_**Configuration :**_
+_**Configuration:**_
 
-We need to configure the batch size for Kafka consumer. This configuration is for how much data will be processed at a time.
+We need to configure the batch size for Kafka consumers. This configuration is for how much data will be processed at a time.
 
 ```
 ws.demand.based.batch.size=10
 ```
 
-### Integration
+## Integration Details
 
-#### Integration Scope
+### Integration Scope
 
 ws-calculator will be integrated with ws-service. ws-services internally invoke the ws-calculator service to calculate and generate demand for the charges.
 
-#### Integration Benefits
+### Integration Benefits
 
-WS calculator application is used to calculate the water application one time Fees and meter reading charges based on the different billing slabs that's why the calculation and demand generation logic will be separate out from WS service.\
-So in future, if calculation logic need to modify then changes can be carry out for each implementation without modifying the WS service.
+WS calculator application is used to calculate the water application one-time Fees and meter reading charges based on the different billing slabs that's why the calculation and demand generation logic will be separated from the WS service.\
+So in future, if calculation logic needs to modify then changes can be carried out for each implementation without modifying the WS service.
 
-#### Steps to Integration
+### Integration Steps
 
-1. Once the water connection is activated for metered-connection, employee can add meter reading details using this API - /ws-calculator/meterConnection/\_createwhich in-turn will generate the demand. For the Non-Metered connections, the scheduler APIs need to be called periodically to generate the demand.
-2. For the Metered Connection service, to get the previous meter reading /meterConnection/\_search API is use.
-3. To Activate the Water Service application, the user needs to pay the ONE\_TIME\_FEE for the connection. To calculate the ONE\_TIME\_FEE /waterCalculator/\_estimate API is use.
-4. To generate the demand for metered or non-metered water connection /waterCalculator/\_calculate API is use.
-5. User can pay partial / full / advance amount for the Metered or Non-Metered connection bill. In these cases, Billing service would call back /waterCalculator/\_updateDemandAPI to update the details of the demand generated.
-6. /waterCalculator/\_jobscheduler API is use to generate demand for Non-metered connections. This API can be called periodically.
-7. /waterCalculator/\_applyAdhocTax API is use to add Rebate or Penalty on any bill and based on that the bill amount will be adjusted.
+1. Once the water connection is activated for the metered connection, the employee can add meter reading details using this API - /ws-calculator/meterConnection/\_createwhich in turn will generate the demand. For the Non-Metered connections, the scheduler APIs need to be called periodically to generate the demand.
+2. For the Metered Connection service, to get the previous meter reading /meterConnection/\_search API is used.
+3. To Activate the Water Service application, the user needs to pay the ONE\_TIME\_FEE for the connection. To calculate the ONE\_TIME\_FEE /waterCalculator/\_estimate API is used.
+4. To generate the demand for metered or non-metered water connection /waterCalculator/\_calculate API is used.
+5. Users can pay partial/full / advance amounts for the Metered or Non-Metered connection bill. In these cases, the Billing service would call back /waterCalculator/\_updateDemandAPI to update the details of the demand generated.
+6. /waterCalculator/\_jobscheduler API is used to generate demand for Non-metered connections. This API can be called periodically.
+7. /waterCalculator/\_applyAdhocTax API is used to add a Rebate or Penalty on any bill and based on that the bill amount will be adjusted.
 
-### Reference Docs
+## Reference Docs
 
 #### Doc Links
 
@@ -444,4 +438,4 @@ So in future, if calculation logic need to modify then changes can be carry out 
 | /waterCalculator/\_updateDemand         | [https://www.getpostman.com/collections/7ca1fb4384cf83c40c9d](https://www.getpostman.com/collections/7ca1fb4384cf83c40c9d) |
 | /waterCalculator/\_jobscheduler         | [https://www.getpostman.com/collections/7ca1fb4384cf83c40c9d](https://www.getpostman.com/collections/7ca1fb4384cf83c40c9d) |
 
-_(Note: All the API’s are in the same postman collection therefore same link is added in each row)_\
+_(Note: All the APIs are in the same Postman collection therefore the same link is added in each row)._\

@@ -1,41 +1,34 @@
 # eChallans Service
 
-### Overview
+## Overview
 
 \
 eChallan system enables employees to generate the challans for Adhoc services so that the payment can be recorded into the system along with service-specific details.
 
-It also enables citizens to make the payments online based on challan no.
+It also enables citizens to make payments online based on challan numbers.
 
-### Pre-requisites
+## Pre-requisites
 
 Before you proceed with the documentation, make sure the following pre-requisites are met -
 
 * _Java 8_
 * Kafka server is up and running
-* egov-persister service is running and has eChallan persister config path added in it
-* PSQL server is running and database is created to store eChallan data
+* egov-persister service is running and has an eChallan persister config path added to it
+* PSQL server is running and a database is created to store eChallan data
 
-### Key Functionalities
+## Key Functionalities
 
-* Allow employee to capture service details for miscellaneous services and collect payment
-* Allow employee to update / cancel challan.
+* Allow employees to capture service details for miscellaneous services and collect payment
+* Allow employees to update/cancel challan.
 * Search, download, and print echallan / bill for miscellaneous service
 * Generate and view echallan / bill pdf for all miscellaneous and ad-hoc services
-* Send SMS and an email bill notification to the citizen with a payment link and bill link
+* Send an SMS and an email bill notification to the citizen with a payment link and bill link
 
-### Interaction Diagram
+## Configuration Details
 
-#### &#x20;UML Diagram:
+### Actions & Role Action Mapping
 
-### Configuration Details
-
-_**Mdms configuration**_**:**
-
-#### Actions & Role Action Mapping
-
-\
-**Actions**
+#### **Actions**
 
 ```
 [
@@ -115,9 +108,7 @@ _**Mdms configuration**_**:**
 
 ```
 
-\
-**Role Action Mapping**\
-
+**Role Action Mapping**
 
 ```
 [
@@ -221,9 +212,7 @@ _**Mdms configuration**_**:**
 
 ```
 
-Roles to be available:\
-\
-
+Roles available:
 
 ```
 
@@ -281,7 +270,7 @@ Roles to be available:\
 }
 ```
 
-### Deployment Details
+## Deployment Details
 
 1. Add mdms configs required for eChallan Service and calculator and restart mdms service.
 2. Deploy the latest version of eChallan Service and calculator.
@@ -289,26 +278,26 @@ Roles to be available:\
 4. Add Role-Action mapping for API’s.
 5. Add pdf configuration file for challan and bill.
 
-### Integration
+## Integration Details
 
-#### Integration Scope
+### Integration Scope
 
-The eChallan service is used to generate **e-challans / bill** for all miscellaneous / adhoc services which citizens avail from ULBs.
+The eChallan service is used to generate **e-challans / bills** for all miscellaneous/ad-hoc services which citizens avail from ULBs.
 
-#### Integration Benefits
+### Integration Benefits
 
 * Can perform service-specific business logic without impacting the other module.
 * Provides the capability of capturing the unique identifier of the entity for which the challan is generated.
-* In the future, if we want to expose the application to citizen then it can be done easily.
+* In the future, if we want to expose the application to citizens then it can be done easily.
 * Workflow or Service-specific workflow can be enabled at the challan service level at any time without changing the design.
-* Allow employee to update / cancel challan
+* Allow employees to update/cancel challan
 
-#### Steps to Integration
+### Integration Steps
 
-1. To integrate, host of echallan-services module should be overwritten in helm chart.
+1. To integrate, the host of echallan-services module should be overwritten in the helm chart.
 2. echallan-services/eChallan/v1/\_create should be added as the create endpoint for creating eChallan in the system
-3. echallan-services/eChallan/v1/\_search should be added as the search endpoint .This method handles all requests to search existing records depending on different search criteria
-4. echallan-services/eChallan/v1/\_update should be added as the update endpoint. This method is used to update fields in existing records or to update status of application based on workflow.
+3. echallan-services/eChallan/v1/\_search should be added as the search endpoint. This method handles all requests to search existing records depending on different search criteria
+4. echallan-services/eChallan/v1/\_update should be added as the update endpoint. This method is used to update fields in existing records or to update the status of applications based on workflow.
 
 ### Reference Docs
 
@@ -327,6 +316,4 @@ The eChallan service is used to generate **e-challans / bill** for all miscellan
 | _echallan-services/eChallan/v1/\_search_  | [https://www.getpostman.com/collections/773565d7b5866f0851e3](https://www.getpostman.com/collections/773565d7b5866f0851e3) |
 | _echallan-services/eChallan/v1/\_count_   | [https://www.getpostman.com/collections/773565d7b5866f0851e3](https://www.getpostman.com/collections/773565d7b5866f0851e3) |
 
-_(Note: All the API’s are in the same postman collection therefore same link is added in each row)_
-
-\
+_(Note: All the APIs are in the same Postman collection therefore the same link is added in each row)._
