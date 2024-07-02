@@ -10,7 +10,7 @@ coverY: 0
 
 A mobile-based application that enables the gram panchayat water committee to collect & manage revenue and expenditure.
 
-mGramSeva is an application that has been developed as part of the iFIX [Exemplar](broken-reference) in Punjab. It enables rural local bodies to manage revenue and expenditures related to water supply projects using a mobile app. The app is meant for members of the water management committee and collection agents. The collection agents can add consumers (or households), and generate bills, and receipt acknowledgements.
+mGramSeva is an application that has been developed as part of the[ exemplar ](introducing-mgramseva/product-docs/user-docs/user-manual.md)in Punjab. It enables rural local bodies to manage revenue and expenditures related to water supply projects using a mobile app. The app is meant for members of the water management committee and collection agents. The collection agents can add consumers (or households), and generate bills and receipt acknowledgements.
 
 ## Problems Addressed
 
