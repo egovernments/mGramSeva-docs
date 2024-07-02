@@ -2,7 +2,7 @@
 
 ## Overview
 
-Vendor Registry is a system that enables ULBEmployees to create and search Vendors i.e. Desluding Operator (DSO) and driver entities with appropriate vehicle Entities for FSM Applications. This document contains details on how to set up the Vendor and describes the functionalities provided.
+Vendor Registry is a system that enables ULB employees to create and search vendors i.e. Desludging Operator (DSO) and driver entities with appropriate vehicle Entities for FSM Applications. This document contains details on how to set up the Vendor and describes the functionalities provided.
 
 ## Pre-requisites
 
@@ -28,9 +28,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
 
 1. Deploy the latest version of the vendor
 2. Add vendor-persister.yml file in the config folder in git and add that path in persister. _(The file path is to be added in the environment yaml file in a param called_ persist-yml-path _) and restart_ egov-persister-service.
-3.  Integrate the below changes in vendor-persister.yml
-
-    [https://github.com/egovernments/configs/commit/95dd26f926ec44d07448926ee4b6b7e031847a57](https://github.com/egovernments/configs/commit/95dd26f926ec44d07448926ee4b6b7e031847a57)
+3. Integrate the below changes in vendor-persister.yml - [https://github.com/egovernments/configs/commit/95dd26f926ec44d07448926ee4b6b7e031847a57](https://github.com/egovernments/configs/commit/95dd26f926ec44d07448926ee4b6b7e031847a57)
 4. [https://github.com/egovernments/configs/pull/2237/files](https://github.com/egovernments/configs/pull/2237/files)
 
 ## Configuration Details
@@ -393,6 +391,6 @@ Any system or DIGIT module can integrated with Vendor Service, which helps to ma
 
 #### API List
 
-<table data-header-hidden><thead><tr><th width="228"></th><th></th></tr></thead><tbody><tr><td><h4><strong>Title</strong> </h4></td><td><strong>Link</strong></td></tr><tr><td>/vendor/v1/_create</td><td><a href="https://www.getpostman.com/collections/c79e98843bcdcc873d09">https://www.getpostman.com/collections/c79e98843bcdcc873d09</a></td></tr><tr><td>/vendor/v1/_search</td><td><a href="https://www.getpostman.com/collections/c79e98843bcdcc873d09">https://www.getpostman.com/collections/c79e98843bcdcc873d09</a></td></tr><tr><td>/vendor/v1/_plainsearch</td><td><a href="https://www.getpostman.com/collections/c79e98843bcdcc873d09">https://www.getpostman.com/collections/c79e98843bcdcc873d09</a></td></tr></tbody></table>
+<table><thead><tr><th width="666">API </th></tr></thead><tbody><tr><td><a href="https://www.getpostman.com/collections/c79e98843bcdcc873d09">/vendor/v1/_create</a></td></tr><tr><td><a href="https://www.getpostman.com/collections/c79e98843bcdcc873d09">/vendor/v1/_search</a></td></tr><tr><td><a href="https://www.getpostman.com/collections/c79e98843bcdcc873d09">/vendor/v1/_plainsearch</a></td></tr></tbody></table>
 
 &#x20;

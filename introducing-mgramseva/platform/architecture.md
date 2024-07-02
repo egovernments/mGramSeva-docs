@@ -30,18 +30,18 @@ mGramSeva is built on top of the [DIGIT ](https://docs.digit.org/)Platform. It c
   17. ​[Filestore](https://core.digit.org/platform/core-services/filestore-service)
   18. ​[API Gateway](https://digit-discuss.atlassian.net/wiki/spaces/EPE/pages/36700192/API-Gateway)​
 * Business Services
-  1. ​[Billing Service​](configuration-docs/billing-service.md)
+  1. ​[Billing Service​](configure-mgramseva/billing-service.md)
   2. ​[Collection service​](https://core.digit.org/platform/api-specifications/collection)
-  3. ​[Apportioning Service​](configuration-docs/apportion-service.md)
+  3. ​[Apportioning Service​](configure-mgramseva/apportion-service.md)
   4. ​[Dashboard Ingest​](https://core.digit.org/platform/core-services/national-dashboard-ingest)
   5. ​[Dashboard Analytic](https://core.digit.org/focus-areas/analytics)s (DSS)
 * Municipal Services
-  1. ​[Property Service](configuration-docs/property-services.md) (property-services)
-  2. ​[Water Service Calculator](configuration-docs/water-calculator-service.md) (ws-calculator)
-  3. ​[Water Service](configuration-docs/water-calculator-service.md) (ws-service)
-  4. ​[eChallan](configuration-docs/echallans-service.md) (echallan)
-  5. ​[User Events](configuration-docs/user-events-service.md) (user-event)
-  6. ​[Vendor](configuration-docs/vendor-registry-service.md)​
+  1. ​[Property Service](configure-mgramseva/property-services.md) (property-services)
+  2. ​[Water Service Calculator](configure-mgramseva/water-calculator-service.md) (ws-calculator)
+  3. ​[Water Service](configure-mgramseva/water-calculator-service.md) (ws-service)
+  4. ​[eChallan](configure-mgramseva/echallans-service.md) (echallan)
+  5. ​[User Events](configure-mgramseva/user-events-service.md) (user-event)
+  6. ​[Vendor](configure-mgramseva/vendor-registry-service.md)​
   7. ​[IFIX Adaptor Integration Service](https://ifix.digit.org/exemplar/mgramseva/user-manual/backend-services/ifix-adapter-integration-service)​
 
 <div align="left">

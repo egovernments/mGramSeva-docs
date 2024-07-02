@@ -107,7 +107,7 @@ Using /localization/messages/v1/\_upsert , add localisation (templates) for noti
 
 Following are the properties in application.properties file in egov-user-events service which are configurable.
 
-| **Property**                                        | **Value**                 | **Remarks**                                                                                                                                            |
+| Property                                            | Value                     | Remarks                                                                                                                                                |
 | --------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <p>kafka.topics.persister.save.events</p><p> </p>   | save-user-events          | This is the persister topic onto which user-events pushes records for persistence. This is for creating events.                                        |
 | <p>kafka.topics.persister.update.events</p><p> </p> | update-user-events        | This is the persister topic onto which user-events pushes records for persistence. This is for updating events.                                        |
@@ -144,7 +144,7 @@ Event Category: Events are categorised into the following:
 
 These event categories are mapped to event types internally. The categories mentioned here are for EVENTSONGROUND type. These are configured in MDMS.
 
-**How does it work?:**
+**How does it work?**
 
 This service manages user events on the egov-platform, which means all the events about which the user (essentially citizen) has to be notified are stored and retrieved through this service. Events can be created either by an API call or by pushing records to the Kafka queue.&#x20;
 
@@ -190,14 +190,13 @@ eGov-user-events can be integrated with any organisation or system which wants t
 
 #### Doc Links
 
-| **Title**                 | **Link**                                                                                                                                                           |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| API Swagger Documentation | [Swagger Documentation](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/DIGIT-OSS/master/municipal-services/docs/user-events.yml#!/) |
+| API Docs                                                                                                                                                               |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [API Swagger Documentation](https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/DIGIT-OSS/master/municipal-services/docs/user-events.yml#!/) |
 
 #### API List
 
-<table data-header-hidden><thead><tr><th width="259"></th><th></th></tr></thead><tbody><tr><td><h4><strong>Title</strong> </h4></td><td><strong>Link</strong></td></tr><tr><td> <em>/egov-user-event/v1/events/_create</em></td><td><a href="https://www.getpostman.com/collections/14812d58dff5565bd3d9">https://www.getpostman.com/collections/14812d58dff5565bd3d9</a></td></tr><tr><td><em>/egov-user-event/v1/events/_update</em></td><td><a href="https://www.getpostman.com/collections/14812d58dff5565bd3d9">https://www.getpostman.com/collections/14812d58dff5565bd3d9</a></td></tr><tr><td><em>/egov-user-event/v1/events/_search</em></td><td><a href="https://www.getpostman.com/collections/14812d58dff5565bd3d9">https://www.getpostman.com/collections/14812d58dff5565bd3d9</a></td></tr><tr><td>/egov-user-event/v1/events/notifications/_count</td><td><a href="https://www.getpostman.com/collections/14812d58dff5565bd3d9">https://www.getpostman.com/collections/14812d58dff5565bd3d9</a></td></tr><tr><td>/egov-user-event/v1/events/lat/_update</td><td><a href="https://www.getpostman.com/collections/14812d58dff5565bd3d9">https://www.getpostman.com/collections/14812d58dff5565bd3d9</a></td></tr></tbody></table>
+<table><thead><tr><th width="664">APIs</th></tr></thead><tbody><tr><td><a href="https://www.getpostman.com/collections/14812d58dff5565bd3d9"> <em>/egov-user-event/v1/events/_create</em></a></td></tr><tr><td><a href="https://www.getpostman.com/collections/14812d58dff5565bd3d9"><em>/egov-user-event/v1/events/_update</em></a></td></tr><tr><td><a href="https://www.getpostman.com/collections/14812d58dff5565bd3d9"><em>/egov-user-event/v1/events/_search</em></a></td></tr><tr><td><a href="https://www.getpostman.com/collections/14812d58dff5565bd3d9">/egov-user-event/v1/events/notifications/_count</a></td></tr><tr><td><a href="https://www.getpostman.com/collections/14812d58dff5565bd3d9">/egov-user-event/v1/events/lat/_update</a></td></tr></tbody></table>
 
 _(Note: All the APIs are in the same Postman collection therefore same link is added in each row)._
 
-\

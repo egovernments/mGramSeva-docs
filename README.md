@@ -84,7 +84,7 @@ This section contains all docs and information required to understand the mGramS
 * [Technology ](introducing-mgramseva/platform/technology.md)
 * [Architecture](introducing-mgramseva/platform/architecture.md)
 * [Demo Video](introducing-mgramseva/platform/demo-video.md)
-* [Configuration Docs](introducing-mgramseva/platform/configuration-docs/)
+* [Configuration Docs](introducing-mgramseva/platform/configure-mgramseva/)
 * [User Manual](introducing-mgramseva/product-docs/user-docs/user-manual.md)
 
 {% hint style="warning" %}
