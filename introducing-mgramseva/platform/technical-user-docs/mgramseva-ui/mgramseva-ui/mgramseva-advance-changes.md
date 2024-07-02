@@ -2,7 +2,7 @@
 
 ## **Overview**
 
-Water Connection advance changes are added to allow the customer to pay advance amount. This amount is adjusted when a new demand is generated. We can enable or disable advance based on the configuration.
+Water Connection advance changes are added to allow the customer to pay the advance amount. This amount is adjusted when a new demand is generated. We can enable or disable advance based on the configuration.
 
 ## Pre-requisites
 
@@ -56,7 +56,7 @@ Deploy the latest version of ws-service, ws-calculator, billing-service, egov-ap
     }
 ```
 
-**Tax head master service configuration**
+**Tax-head master service configuration**
 
 ```
 {
@@ -72,9 +72,9 @@ Deploy the latest version of ws-service, ws-calculator, billing-service, egov-ap
     },
 ```
 
-### **Existing service code changes**
+### **Existing Service Code Changes**
 
-#### **Billing service changes:**
+### **Billing Service Changes**
 
 * Creating a new bill for the advance amount in BillServiceV2.\
   Removing the following line while adding the bill objects to the list\
@@ -85,7 +85,7 @@ Deploy the latest version of ws-service, ws-calculator, billing-service, egov-ap
 * New Demand audit history API in Demandcontroller.\
   An API that returns the audit history of demandDetails. demand/\_history
 
-#### **Water service changes:**
+### **Water Service Changes**
 
 * Create water connection API:\
   Adding a check for payment type advance. If advance, passing a boolean isAdvanceCollection to calculationRequest to water calculator service.
@@ -93,12 +93,9 @@ Deploy the latest version of ws-service, ws-calculator, billing-service, egov-ap
   Adding a check for payment type advance. If advance, passing a boolean isAdvanceCollection to calculationRequest to water calculator service.\
   Adding a check for advance in validateUpdate method to set the current demand to CANCELLED.
 
-#### **Water calculator service changes:**
+### **Water Calculator Service Changes**
 
 * Calling estimation service getEstimationMap based on isAdvanceCalculation boolean. If true, reading taxAmount from criteria.getWaterConnection().getAdvance();
 * Changes in getEstimatesForTax for a new taxHeadCode ADVANCE\_COLLECTION with value WS\_ADVANCE\_CARRYFORWARD
-* Getting the advance amount in getCalculation with taxHeadCode ADVANCE\_COLLECTION\
-  4.Calling generateDemand method based on isAdvanceCalculation. If true, create a demand object with consumerType “waterConnection-advance“.\
-  \
-  \
-  \
+* Getting the advance amount in getCalculation with taxHeadCode ADVANCE\_COLLECTION
+* Calling generateDemand method based on isAdvanceCalculation. If true, create a demand object with consumerType “waterConnection-advance“.

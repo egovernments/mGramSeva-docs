@@ -1,5 +1,5 @@
 ---
-description: How to remove the cache data whenever a new build is deployed
+description: Steps to remove the cache data whenever a new build is deployed
 ---
 
 # Web Caching

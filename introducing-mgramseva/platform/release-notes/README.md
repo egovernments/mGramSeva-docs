@@ -34,7 +34,7 @@ mGramSeva 1.2 release features enhancements with a few functional changes and no
 * [PFM-1728 The old connection ID is to be made mandatory and unique in create/update consumer screen](https://digit-discuss.atlassian.net/browse/PFM-1728)
 * PF[M-1730](https://digit-discuss.atlassian.net/browse/PFM-1730) C[reate a new card in the login to display the GPWSC details and the rate info.](https://digit-discuss.atlassian.net/browse/PFM-1730)
 
-### Success Metrics
+## Success Metrics
 
 Primary KPI for overall mGramSeva - [mGramseva Adoption KPI](https://docs.google.com/presentation/d/1Unpd0r\_kds6uM9swdCU4jdfACHkEy-oi/edit#slide=id.g17f4a59bf94\_0\_6)
 
@@ -52,7 +52,7 @@ Primary KPI for overall mGramSeva - [mGramseva Adoption KPI](https://docs.google
 [PFM-1761](https://digit-discuss.atlassian.net/browse/PFM-1761) - [HH Register PDF | Consumer name in Hindi should be fetched in Hindi even if language selected is English.](https://digit-discuss.atlassian.net/browse/PFM-1761)\
 [PFM-1671](https://digit-discuss.atlassian.net/browse/PFM-1671) - [Bill and Receipt localization issue not displayed properly for tenant and month name](https://digit-discuss.atlassian.net/browse/PFM-1671)
 
-## Document Resources and Links
+## Document Resources & Links
 
 <table><thead><tr><th width="304">UI Technical Documents</th><th>Backend Service Documents</th></tr></thead><tbody><tr><td><p></p><ul><li><a data-mention href="../technical-user-docs/mgramseva-ui/">mgramseva-ui</a></li><li><a data-mention href="../technical-user-docs/tech-user-manual/household-register.md">household-register.md</a></li><li><a data-mention href="../technical-user-docs/tech-user-manual/consumer-details/">consumer-details</a></li><li><a data-mention href="../technical-user-docs/tech-user-manual/consumer-details/update-consumer.md">update-consumer.md</a></li><li><a data-mention href="../technical-user-docs/tech-user-manual/dashboards/monthly-dashboard.md">monthly-dashboard.md</a></li><li><a data-mention href="../technical-user-docs/tech-user-manual/collect-payment.md">collect-payment.md</a></li></ul></td><td><p></p><ul><li><a data-mention href="../technical-user-docs/mgramseva-ui/mgramseva-ui/mgramseva-penalty-changes.md">mgramseva-penalty-changes.md</a></li><li><a data-mention href="../technical-user-docs/mgramseva-ui/mgramseva-ui/mgramseva-advance-changes.md">mgramseva-advance-changes.md</a></li></ul></td></tr></tbody></table>
 
